@@ -18,7 +18,7 @@ class TestData(unittest.TestCase):
     """Test data and datamodel."""
 
     def test_data(self):
-        """Date test."""
+        """Data test."""
         for path in EXAMPLE_FILES:
             print(path)
             obj = yaml_loader.load(path, target_class=MixsCompliantData)
