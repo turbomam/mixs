@@ -42,9 +42,10 @@ help: status
 	@echo "make site -- makes site locally"
 	@echo "make test -- runs tests"
 	@echo "make testdoc -- builds docs and runs local test server"
+	@echo "make schema-diff -- generate schema diff between mixs 6.0.0 and main"
 	@echo ""
 
-.PHONY: all all-assets clean install help status linkml-lint yaml-lint yamlfmt-beta test testdoc serve gen-project gendoc test-schema test-python test-examples ensure-dirs
+.PHONY: all all-assets clean install help status linkml-lint yaml-lint yamlfmt-beta test testdoc serve gen-project gendoc test-schema test-python test-examples ensure-dirs schema-diff
 
 ensure-dirs:
 	mkdir -p assets
@@ -236,6 +237,15 @@ clean-assets:
 	       assets/required_and_recommended_slot_usages.tsv \
 	       assets/mixs_derived_class_term_schemasheet_* \
 	       assets/extensions-dendrogram.pdf \
-	       assets/soil-vs-water-slot-usage.yaml
+	       assets/soil-vs-water-slot-usage.yaml \
+	       assets/diff_results \
+	       assets/releases_for_diffing
+
+# Generate schema diff between mixs 6.0.0 and main branch
+assets/diff_results: src/scripts/diff_two_linkml_mixs_releases.py
+	mkdir -p $@
+	$(RUN) python src/scripts/diff_two_linkml_mixs_releases.py --output-dir $@ --mappings-dir assets/between_diff_mappings/6_to_pre_7
+
+schema-diff: assets/diff_results
 
 include project.Makefile
