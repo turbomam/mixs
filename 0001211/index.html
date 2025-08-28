@@ -397,17 +397,17 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../0016019/">FoodAnimalAndAnimalFeed</a></td>
+<td>A collection of terms appropriate when collecting samples and performing sequ...</td>
+<td>Extension</td>
+</tr>
+<tr>
 <td><a href="../0016021/">FoodFoodProductionFacility</a></td>
 <td>A collection of terms appropriate when collecting samples and performing sequ...</td>
 <td>Extension</td>
 </tr>
 <tr>
 <td><a href="../0016022/">FoodHumanFoods</a></td>
-<td>A collection of terms appropriate when collecting samples and performing sequ...</td>
-<td>Extension</td>
-</tr>
-<tr>
-<td><a href="../0016019/">FoodAnimalAndAnimalFeed</a></td>
 <td>A collection of terms appropriate when collecting samples and performing sequ...</td>
 <td>Extension</td>
 </tr>
@@ -426,9 +426,6 @@
 </li>
 <li>
 <p>Structured pattern: <code>^{termLabel} \[{termID}\]$</code></p>
-</li>
-<li>
-<p>Regex pattern: <code>^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$</code></p>
 </li>
 </ul>
 <h2 id="examples">Examples</h2>
@@ -469,7 +466,6 @@ domain_of:
 - FoodHumanFoods
 range: string
 multivalued: true
-pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
 structured_pattern:
   syntax: ^{termLabel} \[{termID}\]$
   interpolated: true

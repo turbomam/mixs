@@ -418,9 +418,6 @@
 <li>
 <p>Structured pattern: <code>^{name};{float} {unit}$</code></p>
 </li>
-<li>
-<p>Regex pattern: <code>^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[-+]?[0-9]*\.?[0-9]+ ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
-</li>
 </ul>
 <h3 id="annotations">Annotations</h3>
 <ul>
@@ -445,7 +442,6 @@ alias: samp_preserv
 domain_of:
 - HydrocarbonResourcesFluidsSwabs
 range: string
-pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[-+]?[0-9]*\.?[0-9]+ ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{name};{float} {unit}$
   interpolated: true

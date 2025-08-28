@@ -403,7 +403,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../0016007/">HumanVaginal</a></td>
+<td><a href="../0016004/">HumanGut</a></td>
+<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
+<td>Extension</td>
+</tr>
+<tr>
+<td><a href="../0016002/">HostAssociated</a></td>
 <td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
 </tr>
@@ -413,7 +418,7 @@
 <td>Extension</td>
 </tr>
 <tr>
-<td><a href="../0016004/">HumanGut</a></td>
+<td><a href="../0016007/">HumanVaginal</a></td>
 <td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
 </tr>
@@ -427,11 +432,6 @@
 <td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
 </tr>
-<tr>
-<td><a href="../0016002/">HostAssociated</a></td>
-<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
-<td>Extension</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -442,9 +442,6 @@
 </li>
 <li>
 <p>Structured pattern: <code>^{scientific_float}( *- *{scientific_float})? *{text}$</code></p>
-</li>
-<li>
-<p>Regex pattern: <code>^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
 </li>
 </ul>
 <h3 id="annotations">Annotations</h3>
@@ -477,8 +474,6 @@ domain_of:
 - HumanSkin
 - HumanVaginal
 range: string
-pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-  *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
   interpolated: true

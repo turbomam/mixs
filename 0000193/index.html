@@ -418,9 +418,6 @@
 <li>
 <p>Structured pattern: <code>^{integer} {text}$</code></p>
 </li>
-<li>
-<p>Regex pattern: <code>^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
-</li>
 </ul>
 <h3 id="annotations">Annotations</h3>
 <ul>
@@ -447,7 +444,6 @@ alias: room_door_dist
 domain_of:
 - BuiltEnvironment
 range: string
-pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{integer} {text}$
   interpolated: true

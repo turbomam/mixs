@@ -1202,8 +1202,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1224,9 +1222,7 @@ attributes:
     - host
     - host.
     string_serialization: '[female|hermaphrodite|non-binary|male|transgender|transgender
-      (female to male)|transgender (male to female)
-
-      |undeclared]'
+      (female to male)|transgender (male to female) |undeclared]'
     slot_uri: MIXS:0000811
     alias: host_sex
     owner: HumanVaginal
@@ -1429,8 +1425,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1465,8 +1459,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1637,8 +1629,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1667,8 +1657,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1764,8 +1752,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1851,8 +1837,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1942,8 +1926,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2052,8 +2034,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2099,8 +2079,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2184,7 +2162,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
       interpolated: true

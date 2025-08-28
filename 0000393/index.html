@@ -432,9 +432,6 @@
 <li>
 <p>Structured pattern: <code>^{float} *- *{float} {unit}$</code></p>
 </li>
-<li>
-<p>Regex pattern: <code>^[-+]?[0-9]*\.?[0-9]+ *- *[-+]?[0-9]*\.?[0-9]+ ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
-</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -476,7 +473,6 @@ domain_of:
 - HydrocarbonResourcesCores
 - HydrocarbonResourcesFluidsSwabs
 range: string
-pattern: ^[-+]?[0-9]*\.?[0-9]+ *- *[-+]?[0-9]*\.?[0-9]+ ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{float} *- *{float} {unit}$
   interpolated: true

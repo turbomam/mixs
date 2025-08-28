@@ -403,27 +403,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../0016018/">Agriculture</a></td>
-<td>A collection of terms appropriate when sequencing samples obtained in an agri...</td>
-<td>Extension</td>
-</tr>
-<tr>
-<td><a href="../0016007/">HumanVaginal</a></td>
-<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
-<td>Extension</td>
-</tr>
-<tr>
-<td><a href="../0016020/">FoodFarmEnvironment</a></td>
-<td>A collection of terms appropriate when collecting samples and performing sequ...</td>
-<td>Extension</td>
-</tr>
-<tr>
-<td><a href="../0016003/">HumanAssociated</a></td>
-<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
-<td>Extension</td>
-</tr>
-<tr>
-<td><a href="../0016010/">PlantAssociated</a></td>
+<td><a href="../0016023/">SymbiontAssociated</a></td>
 <td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
 </tr>
@@ -433,22 +413,42 @@
 <td>Extension</td>
 </tr>
 <tr>
+<td><a href="../0016002/">HostAssociated</a></td>
+<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
+<td>Extension</td>
+</tr>
+<tr>
+<td><a href="../0016003/">HumanAssociated</a></td>
+<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
+<td>Extension</td>
+</tr>
+<tr>
+<td><a href="../0016020/">FoodFarmEnvironment</a></td>
+<td>A collection of terms appropriate when collecting samples and performing sequ...</td>
+<td>Extension</td>
+</tr>
+<tr>
+<td><a href="../0016007/">HumanVaginal</a></td>
+<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
+<td>Extension</td>
+</tr>
+<tr>
+<td><a href="../0016010/">PlantAssociated</a></td>
+<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
+<td>Extension</td>
+</tr>
+<tr>
 <td><a href="../0016006/">HumanSkin</a></td>
 <td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
 </tr>
 <tr>
+<td><a href="../0016018/">Agriculture</a></td>
+<td>A collection of terms appropriate when sequencing samples obtained in an agri...</td>
+<td>Extension</td>
+</tr>
+<tr>
 <td><a href="../0016005/">HumanOral</a></td>
-<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
-<td>Extension</td>
-</tr>
-<tr>
-<td><a href="../0016023/">SymbiontAssociated</a></td>
-<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
-<td>Extension</td>
-</tr>
-<tr>
-<td><a href="../0016002/">HostAssociated</a></td>
 <td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
 </tr>
@@ -462,9 +462,6 @@
 </li>
 <li>
 <p>Structured pattern: <code>^{scientific_float}( *- *{scientific_float})? *{text}$</code></p>
-</li>
-<li>
-<p>Regex pattern: <code>^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
 </li>
 </ul>
 <h3 id="annotations">Annotations</h3>
@@ -500,8 +497,6 @@ domain_of:
 - PlantAssociated
 - SymbiontAssociated
 range: string
-pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-  *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
   interpolated: true

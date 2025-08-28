@@ -1324,7 +1324,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: FWD:{dna};REV:{dna}
+      syntax: FWD:{dna_bases};REV:{dna_bases}
       interpolated: true
   size_frac:
     name: size_frac
@@ -1415,7 +1415,6 @@ attributes:
     - Agriculture
     range: string
     recommended: true
-    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
@@ -1496,7 +1495,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{dna}$
+      syntax: ^{dna_bases}$
       interpolated: true
       partial_match: true
   temp:
@@ -1552,8 +1551,6 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1591,7 +1588,6 @@ attributes:
     - FoodHumanFoods
     range: string
     recommended: true
-    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
       interpolated: true
@@ -1631,8 +1627,6 @@ attributes:
     - FoodHumanFoods
     range: string
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1675,8 +1669,6 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1788,8 +1780,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1976,7 +1966,6 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -2092,7 +2081,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{dna};{dna}$
+      syntax: ^{dna_bases};{dna_bases}$
       interpolated: true
       partial_match: true
   neg_cont_type:
@@ -2153,7 +2142,6 @@ attributes:
     - Agriculture
     range: string
     recommended: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
       interpolated: true
@@ -2180,7 +2168,6 @@ attributes:
     - Agriculture
     range: string
     recommended: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
       interpolated: true
@@ -2335,8 +2322,6 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2374,7 +2359,6 @@ attributes:
     - FoodHumanFoods
     range: string
     recommended: true
-    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
       interpolated: true
@@ -2413,7 +2397,6 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -2451,7 +2434,6 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[NCBITaxon:\d+\]$
     structured_pattern:
       syntax: ^{text} \[{NCBItaxon_id}\]$
       interpolated: true
@@ -2493,7 +2475,6 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '^([^\s-]{1,2}|[^\s-]+.+[^\s-]+): ([^\s-]{1,2}|[^\s-]+.+[^\s-]+), ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     structured_pattern:
       syntax: '^{country}: {region}, {specific_location}$'
       interpolated: true
@@ -2568,7 +2549,6 @@ attributes:
     - FoodHumanFoods
     range: string
     required: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
     structured_pattern:
       syntax: ^{text}|({termLabel} \[{termID}\])$
       interpolated: true
@@ -2609,7 +2589,6 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: ^(-?((?:[0-8]?[0-9](?:\.\d{0,8})?)|90)) -?[0-9]+(?:\.[0-9]{0,8})?$|^-?(1[0-7]{1,2})$
     structured_pattern:
       syntax: ^{lat} {lon}$
       interpolated: true
@@ -2660,8 +2639,6 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2921,8 +2898,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2966,7 +2941,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
       interpolated: true
@@ -2992,8 +2966,6 @@ attributes:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3305,7 +3277,6 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     range: string
     required: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -3334,7 +3305,6 @@ attributes:
     - FoodHumanFoods
     range: string
     required: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
     structured_pattern:
       syntax: ^{text}|({termLabel} \[{termID}\])$
       interpolated: true
@@ -3459,7 +3429,6 @@ attributes:
     - FoodHumanFoods
     range: string
     required: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -3536,7 +3505,6 @@ attributes:
     - FoodHumanFoods
     range: string
     multivalued: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -3596,7 +3564,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
       interpolated: true
@@ -3646,8 +3613,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3867,7 +3832,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
       interpolated: true
@@ -3922,7 +3886,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
     structured_pattern:
       syntax: ^{text}|({termLabel} \[{termID}\])$
       interpolated: true
@@ -3951,7 +3914,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
       interpolated: true
@@ -3978,8 +3940,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4046,7 +4006,6 @@ attributes:
     - FoodHumanFoods
     range: string
     multivalued: true
-    pattern: ^(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])|[1-9][0-9]*$
     structured_pattern:
       syntax: ^({termLabel} \[{termID}\])|{integer}$
       interpolated: true
@@ -4152,8 +4111,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4176,8 +4133,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4345,8 +4300,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4375,7 +4328,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
       interpolated: true
@@ -4404,8 +4356,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4489,7 +4439,6 @@ attributes:
     - FoodHumanFoods
     range: string
     multivalued: true
-    pattern: '^([^\s-]{1,2}|[^\s-]+.+[^\s-]+): ([^\s-]{1,2}|[^\s-]+.+[^\s-]+), ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     structured_pattern:
       syntax: '^{text}: {text}, {text}$'
       interpolated: true
@@ -4546,7 +4495,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '^([^\s-]{1,2}|[^\s-]+.+[^\s-]+): ([^\s-]{1,2}|[^\s-]+.+[^\s-]+), ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     structured_pattern:
       syntax: '^{text}: {text}, {text}$'
       interpolated: true
@@ -4696,7 +4644,6 @@ attributes:
     - FoodFoodProductionFacility
     range: string
     multivalued: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -4721,7 +4668,6 @@ attributes:
     - FoodHumanFoods
     range: string
     multivalued: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -4835,7 +4781,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true
@@ -4970,8 +4915,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -5060,7 +5003,6 @@ attributes:
     - FoodHumanFoods
     range: string
     multivalued: true
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
       interpolated: true

@@ -397,12 +397,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../0016022/">FoodHumanFoods</a></td>
+<td><a href="../0016019/">FoodAnimalAndAnimalFeed</a></td>
 <td>A collection of terms appropriate when collecting samples and performing sequ...</td>
 <td>Extension</td>
 </tr>
 <tr>
-<td><a href="../0016019/">FoodAnimalAndAnimalFeed</a></td>
+<td><a href="../0016022/">FoodHumanFoods</a></td>
 <td>A collection of terms appropriate when collecting samples and performing sequ...</td>
 <td>Extension</td>
 </tr>
@@ -416,9 +416,6 @@
 </li>
 <li>
 <p>Structured pattern: <code>^{integer} {text}$</code></p>
-</li>
-<li>
-<p>Regex pattern: <code>^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
 </li>
 </ul>
 <h2 id="examples">Examples</h2>
@@ -451,7 +448,6 @@ domain_of:
 - FoodAnimalAndAnimalFeed
 - FoodHumanFoods
 range: string
-pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{integer} {text}$
   interpolated: true

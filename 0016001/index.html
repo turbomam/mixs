@@ -1847,8 +1847,6 @@ attributes:
     - BuiltEnvironment
     range: float
     required: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1879,8 +1877,6 @@ attributes:
     - BuiltEnvironment
     range: string
     required: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1908,8 +1904,6 @@ attributes:
     - BuiltEnvironment
     range: float
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1936,8 +1930,6 @@ attributes:
     - FoodFoodProductionFacility
     range: string
     required: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -1963,8 +1955,6 @@ attributes:
     - BuiltEnvironment
     range: string
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2026,8 +2016,6 @@ attributes:
     - BuiltEnvironment
     range: string
     recommended: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2050,8 +2038,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2077,8 +2063,6 @@ attributes:
     - BuiltEnvironment
     range: string
     required: true
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2339,7 +2323,6 @@ attributes:
     - BuiltEnvironment
     range: float
     required: true
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -2390,7 +2373,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
       interpolated: true
@@ -2428,8 +2410,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2485,8 +2465,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2512,8 +2490,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2567,8 +2543,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2621,8 +2595,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2727,8 +2699,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -2816,8 +2786,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3048,8 +3016,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3067,7 +3033,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3120,8 +3085,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3144,8 +3107,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3254,8 +3215,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3291,7 +3250,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3413,8 +3371,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3437,8 +3393,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3489,7 +3443,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3520,7 +3473,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3538,7 +3490,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3556,7 +3507,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3628,8 +3578,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3705,8 +3653,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -3801,7 +3747,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3856,7 +3801,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3874,7 +3818,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3937,7 +3880,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
       interpolated: true
@@ -3988,7 +3930,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
       interpolated: true
@@ -4008,7 +3949,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
       interpolated: true
@@ -4028,7 +3968,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
       interpolated: true
@@ -4245,8 +4184,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4285,8 +4222,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4376,8 +4311,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4433,8 +4366,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4523,8 +4454,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
@@ -4548,8 +4477,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true

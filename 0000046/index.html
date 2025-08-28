@@ -397,6 +397,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../0016018/">Agriculture</a></td>
+<td>A collection of terms appropriate when sequencing samples obtained in an agri...</td>
+<td>Extension</td>
+</tr>
+<tr>
 <td><a href="../0010008/">MimarksS</a></td>
 <td>Minimal Information about a Marker Sequence: survey</td>
 <td>Checklist</td>
@@ -405,11 +410,6 @@
 <td><a href="../0010009/">MimarksC</a></td>
 <td>Minimal Information about a Marker Sequence: specimen</td>
 <td>Checklist</td>
-</tr>
-<tr>
-<td><a href="../0016018/">Agriculture</a></td>
-<td>A collection of terms appropriate when sequencing samples obtained in an agri...</td>
-<td>Extension</td>
 </tr>
 </tbody>
 </table>
@@ -420,7 +420,7 @@
 <p>Cardinality: 0..1</p>
 </li>
 <li>
-<p>Structured pattern: <code>FWD:{dna};REV:{dna}</code></p>
+<p>Structured pattern: <code>FWD:{dna_bases};REV:{dna_bases}</code></p>
 </li>
 </ul>
 <h2 id="examples">Examples</h2>
@@ -460,7 +460,7 @@ domain_of:
 - Agriculture
 range: string
 structured_pattern:
-  syntax: FWD:{dna};REV:{dna}
+  syntax: FWD:{dna_bases};REV:{dna_bases}
   interpolated: true
 
 </code></pre>

@@ -418,9 +418,6 @@
 <li>
 <p>Structured pattern: <code>^{scientific_float}( *- *{scientific_float})? *{text}$</code></p>
 </li>
-<li>
-<p>Regex pattern: <code>^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
-</li>
 </ul>
 <h3 id="annotations">Annotations</h3>
 <ul>
@@ -446,8 +443,6 @@ alias: owc_tvdss
 domain_of:
 - HydrocarbonResourcesCores
 range: string
-pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-  *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
   interpolated: true

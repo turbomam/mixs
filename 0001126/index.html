@@ -417,9 +417,6 @@
 <li>
 <p>Structured pattern: <code>^{termLabel} \[{termID}\]$</code></p>
 </li>
-<li>
-<p>Regex pattern: <code>^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$</code></p>
-</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -457,7 +454,6 @@ domain_of:
 - FoodFarmEnvironment
 range: string
 multivalued: true
-pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
 structured_pattern:
   syntax: ^{termLabel} \[{termID}\]$
   interpolated: true

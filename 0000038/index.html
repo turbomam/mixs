@@ -397,38 +397,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../0010003/">MigsBa</a></td>
-<td>Minimal Information about a Genome Sequence: cultured bacteria/archaea</td>
-<td>Checklist</td>
-</tr>
-<tr>
-<td><a href="../0016018/">Agriculture</a></td>
-<td>A collection of terms appropriate when sequencing samples obtained in an agri...</td>
-<td>Extension</td>
-</tr>
-<tr>
 <td><a href="../0010007/">Mims</a></td>
 <td>Metagenome or Environmental</td>
-<td>Checklist</td>
-</tr>
-<tr>
-<td><a href="../0010011/">Mimag</a></td>
-<td>Minimum Information About a Metagenome-Assembled Genome</td>
-<td>Checklist</td>
-</tr>
-<tr>
-<td><a href="../0010009/">MimarksC</a></td>
-<td>Minimal Information about a Marker Sequence: specimen</td>
-<td>Checklist</td>
-</tr>
-<tr>
-<td><a href="../0010005/">MigsVi</a></td>
-<td>Minimal Information about a Genome Sequence: virus</td>
-<td>Checklist</td>
-</tr>
-<tr>
-<td><a href="../0010006/">MigsOrg</a></td>
-<td>Minimal Information about a Genome Sequence: organelle</td>
 <td>Checklist</td>
 </tr>
 <tr>
@@ -437,9 +407,29 @@
 <td>Checklist</td>
 </tr>
 <tr>
+<td><a href="../0010003/">MigsBa</a></td>
+<td>Minimal Information about a Genome Sequence: cultured bacteria/archaea</td>
+<td>Checklist</td>
+</tr>
+<tr>
 <td><a href="../0010008/">MimarksS</a></td>
 <td>Minimal Information about a Marker Sequence: survey</td>
 <td>Checklist</td>
+</tr>
+<tr>
+<td><a href="../0010009/">MimarksC</a></td>
+<td>Minimal Information about a Marker Sequence: specimen</td>
+<td>Checklist</td>
+</tr>
+<tr>
+<td><a href="../0010006/">MigsOrg</a></td>
+<td>Minimal Information about a Genome Sequence: organelle</td>
+<td>Checklist</td>
+</tr>
+<tr>
+<td><a href="../0016018/">Agriculture</a></td>
+<td>A collection of terms appropriate when sequencing samples obtained in an agri...</td>
+<td>Extension</td>
 </tr>
 <tr>
 <td><a href="../0010004/">MigsPl</a></td>
@@ -447,13 +437,23 @@
 <td>Checklist</td>
 </tr>
 <tr>
-<td><a href="../0010002/">MigsEu</a></td>
-<td>Minimal Information about a Genome Sequence: eukaryote</td>
+<td><a href="../0010011/">Mimag</a></td>
+<td>Minimum Information About a Metagenome-Assembled Genome</td>
 <td>Checklist</td>
 </tr>
 <tr>
 <td><a href="../0010010/">Misag</a></td>
 <td>Minimum Information About a Single Amplified Genome</td>
+<td>Checklist</td>
+</tr>
+<tr>
+<td><a href="../0010005/">MigsVi</a></td>
+<td>Minimal Information about a Genome Sequence: virus</td>
+<td>Checklist</td>
+</tr>
+<tr>
+<td><a href="../0010002/">MigsEu</a></td>
+<td>Minimal Information about a Genome Sequence: eukaryote</td>
 <td>Checklist</td>
 </tr>
 </tbody>
@@ -466,9 +466,6 @@
 </li>
 <li>
 <p>Structured pattern: <code>^{PMID}|{DOI}|{URL}$</code></p>
-</li>
-<li>
-<p>Regex pattern: <code>^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$</code></p>
 </li>
 </ul>
 <h2 id="examples">Examples</h2>
@@ -513,7 +510,6 @@ domain_of:
 - Miuvig
 - Agriculture
 range: string
-pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
 structured_pattern:
   syntax: ^{PMID}|{DOI}|{URL}$
   interpolated: true

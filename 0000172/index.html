@@ -412,11 +412,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../0016008/">MicrobialMatBiofilm</a></td>
-<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
-<td>Extension</td>
-</tr>
-<tr>
 <td><a href="../0016011/">Sediment</a></td>
 <td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
@@ -424,6 +419,11 @@
 <tr>
 <td><a href="../0016014/">Water</a></td>
 <td>A collection of terms appropriate when collecting samples and sequencing wate...</td>
+<td>Extension</td>
+</tr>
+<tr>
+<td><a href="../0016008/">MicrobialMatBiofilm</a></td>
+<td>A collection of terms appropriate when collecting samples and sequencing samp...</td>
 <td>Extension</td>
 </tr>
 </tbody>
@@ -436,9 +436,6 @@
 </li>
 <li>
 <p>Structured pattern: <code>^{scientific_float}( *- *{scientific_float})? *{text}$</code></p>
-</li>
-<li>
-<p>Regex pattern: <code>^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
 </li>
 </ul>
 <h2 id="examples">Examples</h2>
@@ -478,8 +475,6 @@ domain_of:
 - Sediment
 - Water
 range: string
-pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
-  *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
   interpolated: true
