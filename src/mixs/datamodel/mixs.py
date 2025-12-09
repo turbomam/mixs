@@ -1,5 +1,5 @@
 # Auto generated from mixs.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-09-02T09:43:43
+# Generation date: 2025-12-09T00:57:05
 # Schema: mixs
 #
 # id: https://w3id.org/mixs
