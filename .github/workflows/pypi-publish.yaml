@@ -31,7 +31,9 @@ jobs:
   build-n-publish:
     name: Build and publish Python distributions to PyPI
     runs-on: ubuntu-latest
-    # This job will always be skipped unless manually enabled
+    # DISABLED: This job is intentionally disabled by the '&& false' clause below.
+    # The MIxS package has never been published to PyPI.
+    # To re-enable in the future, remove '&& false' from the condition.
     if: ${{ github.event.inputs.confirm_publish == 'publish' && false }}
 
     steps:

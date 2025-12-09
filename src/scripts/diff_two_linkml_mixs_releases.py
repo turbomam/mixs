@@ -1,7 +1,9 @@
+import ast
 import os
 import pprint
 import re
 import logging
+import tempfile
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -394,10 +396,11 @@ class LinkMLComparator:
         old_attrs = set(dir(old_instance)) if old_instance else set()
         new_attrs = set(dir(new_instance)) if new_instance else set()
         
-        # Filter attributes  
-        excluded = {attr for attr in (old_attrs | new_attrs) 
-                   if attr.startswith('_') or callable(getattr(old_instance, attr, None)) 
-                   or callable(getattr(new_instance, attr, None))}
+        # Filter attributes - handle None instances safely
+        excluded = {attr for attr in (old_attrs | new_attrs)
+                   if attr.startswith('_')
+                   or (old_instance and callable(getattr(old_instance, attr, None)))
+                   or (new_instance and callable(getattr(new_instance, attr, None)))}
         
         all_attrs = (old_attrs | new_attrs) - excluded
         
@@ -710,9 +713,10 @@ def schema_comparison_to_dict(comparison: SchemaComparison) -> dict:
             result = {}
             for diff in value_comp.differences:
                 if diff.startswith("Only in old: "):
-                    result['only_in_old'] = eval(diff.replace("Only in old: ", ""))
+                    # Use ast.literal_eval for safe parsing instead of eval
+                    result['only_in_old'] = ast.literal_eval(diff.replace("Only in old: ", ""))
                 elif diff.startswith("Only in new: "):
-                    result['only_in_new'] = eval(diff.replace("Only in new: ", ""))
+                    result['only_in_new'] = ast.literal_eval(diff.replace("Only in new: ", ""))
             # Clean the extracted values
             if 'only_in_old' in result:
                 result['only_in_old'] = clean_value(result['only_in_old'])
@@ -1186,28 +1190,29 @@ def get_linkml_metamodel() -> SchemaView:
     global _METAMODEL_SCHEMA_VIEW
     
     if _METAMODEL_SCHEMA_VIEW is None:
+        temp_path = None
         try:
             logger.info("Loading LinkML metamodel from GitHub...")
             metamodel_url = "https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/meta.yaml"
-            
+
             # Download and cache the metamodel
-            import tempfile
             with tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False) as f:
                 response = requests.get(metamodel_url, timeout=30)
                 response.raise_for_status()
                 f.write(response.text)
                 temp_path = f.name
-            
+
             # Create SchemaView with imports merged
             _METAMODEL_SCHEMA_VIEW = SchemaView(temp_path)
             logger.info("Successfully loaded LinkML metamodel")
-            
-            # Clean up temp file
-            os.unlink(temp_path)
-            
+
         except Exception as e:
             logger.error(f"Failed to load LinkML metamodel: {e}")
             raise RuntimeError(f"Cannot proceed without metamodel: {e}")
+        finally:
+            # Clean up temp file even if exception occurred
+            if temp_path and os.path.exists(temp_path):
+                os.unlink(temp_path)
     
     return _METAMODEL_SCHEMA_VIEW
 
@@ -1516,10 +1521,11 @@ def find_element_differences(old_element, new_element, element_type: str) -> Lis
     
     all_attrs = (old_attrs | new_attrs) - excluded_attrs
     
-    # Further filter out callable methods
+    # Further filter out callable methods - handle None elements safely
     all_attrs = {
-        attr for attr in all_attrs 
-        if not (callable(getattr(old_element, attr, None)) or callable(getattr(new_element, attr, None)))
+        attr for attr in all_attrs
+        if not ((old_element and callable(getattr(old_element, attr, None)))
+                or (new_element and callable(getattr(new_element, attr, None))))
     }
     
     for attr in sorted(all_attrs):
@@ -1574,8 +1580,8 @@ def analyze_slot_settings_usage(schema_view: SchemaView) -> Dict[str, any]:
         - 'undefined_settings': Set of setting names used but not defined
         - 'unused_settings': Set of setting names defined but not used
     """
-    import re
-    
+    # Note: 're' is already imported at module level
+
     settings_usage = {}  # setting_name -> [slot_names]
     pattern_usage = {}   # full_pattern -> [slot_names]
     all_referenced_settings = set()
@@ -1588,7 +1594,9 @@ def analyze_slot_settings_usage(schema_view: SchemaView) -> Dict[str, any]:
             if all_settings:
                 defined_settings = set(all_settings.keys())
         except (AttributeError, TypeError):
-            pass
+            # 'settings' attribute may not exist or may be of unexpected type
+            # This is expected for some schemas - proceed with empty defined_settings
+            logger.debug("No 'settings' attribute found in schema")
         
         # Parse all slots for structured patterns
         all_slots = schema_view.all_slots(imports=True)
@@ -1681,18 +1689,24 @@ def validate_github_token(token: str) -> bool:
 
 def get_github_headers() -> Dict[str, str]:
     """Get GitHub API headers with authentication if available.
-    
+
     Returns:
         Dict containing Authorization header if token is available, empty dict otherwise.
     """
     global AUTH_MESSAGE_PRINTED
-    
-    env_file = Path(__file__).parent.parent.parent / 'local' / '.env'
-    if env_file.exists():
-        load_dotenv(env_file)
+
+    # First check environment variable (for CI/CD like GitHub Actions)
+    token = os.getenv('GITHUB_TOKEN')
+
+    # Fall back to .env file for local development
+    if not token:
+        env_file = Path(__file__).parent.parent.parent / 'local' / '.env'
+        if env_file.exists():
+            load_dotenv(env_file)
+            token = os.getenv('GITHUB_TOKEN')
 
     headers = {}
-    if token := os.getenv('GITHUB_TOKEN'):
+    if token:
         if validate_github_token(token):
             headers['Authorization'] = f'token {token}'
             if VERBOSE_AUTH or not AUTH_MESSAGE_PRINTED:
@@ -1895,18 +1909,25 @@ def download_schema_file(url: str, local_path: Path) -> bool:
         response = requests.get(url, headers=headers, timeout=30)
         API_CALL_COUNT += 1
         response.raise_for_status()
-        
+
+        # Validate that response is valid YAML before writing
+        try:
+            yaml.safe_load(response.text)
+        except yaml.YAMLError as e:
+            logger.error(f"Downloaded content is not valid YAML: {e}")
+            return False
+
         # Ensure parent directory exists
         local_path.parent.mkdir(parents=True, exist_ok=True)
-        
+
         with open(local_path, 'w', encoding='utf-8') as f:
             f.write(response.text)
-        
-        print(f"Downloaded schema to: {local_path}")
+
+        logger.info(f"Downloaded schema to: {local_path}")
         return True
-        
+
     except Exception as e:
-        print(f"Error downloading schema from {url}: {e}")
+        logger.error(f"Error downloading schema from {url}: {e}")
         return False
 
 
@@ -2191,10 +2212,10 @@ def build_release_info_dict(repositories: List[Tuple[str, str]] = None) -> Dict[
 
 
 @click.command()
-@click.option('--old', default='GenomicsStandardsConsortium/mixs@74744ee:model/schema/mixs.yaml',
-              help='Old schema in format owner/repo@commit:path (default: GenomicsStandardsConsortium/mixs@74744ee:model/schema/mixs.yaml)')
-@click.option('--new', default='GenomicsStandardsConsortium/mixs@994c745:src/mixs/schema/mixs.yaml',
-              help='New schema in format owner/repo@commit:path (default: GenomicsStandardsConsortium/mixs@994c745:src/mixs/schema/mixs.yaml)')
+@click.option('--old', required=True,
+              help='Old schema in format owner/repo@commit:path (e.g., GenomicsStandardsConsortium/mixs@mixs6.0.0:src/mixs/schema/mixs.yaml)')
+@click.option('--new', required=True,
+              help='New schema in format owner/repo@commit:path (e.g., GenomicsStandardsConsortium/mixs@main:src/mixs/schema/mixs.yaml)')
 @click.option('--no-cache', is_flag=True, default=False,
               help='Skip caching schemas locally (use remote URLs directly)')
 @click.option('--output-dir', type=click.Path(path_type=Path), 

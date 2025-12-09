@@ -96,8 +96,9 @@ jobs:
       - name: Update version references in documentation
         run: |
           # Update release/README.md - update the "Current version" link
-          sed -i 's|Current version: \[MIxS v[0-9.]*\]|Current version: [MIxS v${{ inputs.version }}]|g' release/README.md
-          sed -i 's|releases/tag/v[0-9.]*)|releases/tag/v${{ inputs.version }})|g' release/README.md
+          # Use precise regex to match X.Y.Z version format
+          sed -i 's|Current version: \[MIxS v[0-9]\+\.[0-9]\+\.[0-9]\+\]|Current version: [MIxS v${{ inputs.version }}]|g' release/README.md
+          sed -i 's|releases/tag/v[0-9]\+\.[0-9]\+\.[0-9]\+)|releases/tag/v${{ inputs.version }})|g' release/README.md
 
       - name: Run build and tests
         if: ${{ !inputs.skip_tests }}
@@ -113,8 +114,8 @@ jobs:
         run: |
           mkdir -p assets/diff_results
           poetry run diff-releases \
-            --old "${{ inputs.diff_old }}" \
-            --new "${{ inputs.diff_new }}" \
+            --old "GenomicsStandardsConsortium/mixs@${{ inputs.diff_old }}:src/mixs/schema/mixs.yaml" \
+            --new "GenomicsStandardsConsortium/mixs@${{ inputs.diff_new }}:src/mixs/schema/mixs.yaml" \
             --output-dir assets/diff_results \
             --mappings-dir assets/between_diff_mappings/6_to_pre_7 \
             || echo "Diff generation encountered issues - check logs"
