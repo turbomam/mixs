@@ -657,6 +657,18 @@
 <td>Can a 16S gene be recovered from the submitted SAG or MAG?</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001354">MIXS:0001354</a></td>
+<td><a href="../0001354/">marker_gene_recov</a></td>
+<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
+<td>Recovery status of taxonomic marker genes from the assembled genome</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/mixs/0001355">MIXS:0001355</a></td>
+<td><a href="../0001355/">marker_gene_recov_sw</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Tools used for taxonomic marker gene extraction from assembled genomes</td>
+</tr>
+<tr>
 <td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
@@ -1805,6 +1817,8 @@ attributes:
     alias: samp_name
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1861,6 +1875,7 @@ attributes:
     alias: size_frac
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1887,6 +1902,7 @@ attributes:
     alias: lib_screen
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1922,6 +1938,7 @@ attributes:
     alias: ref_db
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1947,6 +1964,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1962,7 +1981,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1981,6 +2000,7 @@ attributes:
     alias: lib_size
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2027,6 +2047,7 @@ attributes:
     alias: mid
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -2058,6 +2079,7 @@ attributes:
     alias: assembly_name
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2089,6 +2111,8 @@ attributes:
     alias: temp
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2219,6 +2243,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2238,7 +2264,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -2258,6 +2284,8 @@ attributes:
     alias: samp_size
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2301,6 +2329,8 @@ attributes:
     alias: alt
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2403,6 +2433,8 @@ attributes:
     alias: source_mat_id
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2443,6 +2475,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2496,6 +2530,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2526,6 +2561,8 @@ attributes:
     alias: rel_to_oxygen
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - Mimag
     - MimarksC
@@ -2598,6 +2635,8 @@ attributes:
     alias: samp_collect_device
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2632,6 +2671,7 @@ attributes:
     alias: number_contig
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2681,6 +2721,7 @@ attributes:
     alias: lib_layout
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2751,6 +2792,7 @@ attributes:
     alias: assembly_qual
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2777,6 +2819,7 @@ attributes:
     alias: ref_biomaterial
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2788,7 +2831,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -2806,6 +2849,8 @@ attributes:
     alias: project_name
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2860,6 +2905,7 @@ attributes:
     alias: lib_vector
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2888,6 +2934,7 @@ attributes:
     alias: adapters
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2922,6 +2969,8 @@ attributes:
     alias: neg_cont_type
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2950,6 +2999,7 @@ attributes:
     alias: assembly_software
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3038,6 +3088,7 @@ attributes:
     alias: annot
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3090,6 +3141,61 @@ attributes:
     - Mimag
     - Misag
     range: boolean
+  marker_gene_recov:
+    name: marker_gene_recov
+    description: Recovery status of taxonomic marker genes from the assembled genome
+    title: taxonomic marker gene recovered
+    examples:
+    - value: 'true'
+    in_subset:
+    - sequencing
+    from_schema: https://w3id.org/mixs
+    see_also:
+    - MIXS:0000065
+    aliases:
+    - x16s_recover
+    keywords:
+    - recover
+    - marker gene
+    - taxonomy
+    slot_uri: MIXS:0001354
+    alias: marker_gene_recov
+    owner: MimagBuiltEnvironment
+    domain_of:
+    - Mimag
+    - Misag
+    range: boolean
+  marker_gene_recov_sw:
+    name: marker_gene_recov_sw
+    description: Tools used for taxonomic marker gene extraction from assembled genomes
+    title: taxonomic marker gene recovery software
+    examples:
+    - value: rambl;v2;default parameters
+    - value: barrnap;0.9;--kingdom bac
+    - value: metaxa2;2.2;-t bacteria
+    in_subset:
+    - sequencing
+    from_schema: https://w3id.org/mixs
+    see_also:
+    - MIXS:0000066
+    aliases:
+    - x16s_recover_software
+    keywords:
+    - recover
+    - software
+    - marker gene
+    - taxonomy
+    slot_uri: MIXS:0001355
+    alias: marker_gene_recov_sw
+    owner: MimagBuiltEnvironment
+    domain_of:
+    - Mimag
+    - Misag
+    range: string
+    structured_pattern:
+      syntax: ^{software};{version};{parameters}$
+      interpolated: true
+      partial_match: true
   pos_cont_type:
     name: pos_cont_type
     description: The substance, mixture, product, or apparatus used to verify that
@@ -3105,6 +3211,8 @@ attributes:
     alias: pos_cont_type
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3135,6 +3243,7 @@ attributes:
     alias: feat_pred
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3206,6 +3315,8 @@ attributes:
     alias: env_local_scale
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3242,6 +3353,8 @@ attributes:
     alias: samp_mat_process
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3272,6 +3385,7 @@ attributes:
     alias: sim_search_meth
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3307,6 +3421,8 @@ attributes:
     alias: depth
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3351,6 +3467,8 @@ attributes:
     alias: samp_collect_method
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3369,7 +3487,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   compl_appr:
@@ -3419,6 +3537,8 @@ attributes:
     alias: env_medium
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3456,6 +3576,8 @@ attributes:
     alias: samp_taxon_id
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3492,6 +3614,8 @@ attributes:
     alias: geo_loc_name
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3532,6 +3656,8 @@ attributes:
     alias: collection_date
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3566,6 +3692,8 @@ attributes:
     alias: seq_meth
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3606,6 +3734,8 @@ attributes:
     alias: lat_lon
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3650,6 +3780,8 @@ attributes:
     alias: elev
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3698,6 +3830,8 @@ attributes:
     alias: env_broad_scale
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3733,6 +3867,7 @@ attributes:
     alias: tax_class
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3767,6 +3902,8 @@ attributes:
     alias: experimental_factor
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3805,6 +3942,8 @@ attributes:
     alias: associated_resource
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3821,7 +3960,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -3843,6 +3982,8 @@ attributes:
     alias: sop
     owner: MimagBuiltEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3859,7 +4000,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   surf_material:
     name: surf_material

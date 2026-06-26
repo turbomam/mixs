@@ -411,7 +411,7 @@
 
 
 <h1 id="extension-food-human-foods-foodhumanfoods">Extension: food-human foods (FoodHumanFoods)</h1>
-<p><em>A collection of terms appropriate when collecting samples and performing sequencing of samples  obtained from human food products.</em></p>
+<p><em>A collection of terms appropriate when collecting samples and performing sequencing of samples obtained from human food products.</em></p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
@@ -1099,7 +1099,7 @@ annotations:
     tag: use_cases
     value: Microbiome of foods intended for human consumption.
 description: A collection of terms appropriate when collecting samples and performing
-  sequencing of samples  obtained from human food products.
+  sequencing of samples obtained from human food products.
 title: food-human foods
 comments:
 - This extension is intended to work alongside the other food extensions (animals
@@ -1267,7 +1267,7 @@ annotations:
     tag: use_cases
     value: Microbiome of foods intended for human consumption.
 description: A collection of terms appropriate when collecting samples and performing
-  sequencing of samples  obtained from human food products.
+  sequencing of samples obtained from human food products.
 title: food-human foods
 comments:
 - This extension is intended to work alongside the other food extensions (animals
@@ -1336,6 +1336,8 @@ attributes:
     alias: samp_name
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1386,6 +1388,8 @@ attributes:
     alias: project_name
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1439,6 +1443,8 @@ attributes:
     alias: lat_lon
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1480,6 +1486,8 @@ attributes:
     alias: geo_loc_name
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1520,6 +1528,8 @@ attributes:
     alias: collection_date
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1554,6 +1564,8 @@ attributes:
     alias: seq_meth
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1593,6 +1605,8 @@ attributes:
     alias: samp_size
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1637,6 +1651,8 @@ attributes:
     alias: samp_collect_device
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1678,6 +1694,8 @@ attributes:
     alias: experimental_factor
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1710,6 +1728,8 @@ attributes:
     alias: nucl_acid_ext
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1728,7 +1748,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   organism_count:
@@ -1920,6 +1940,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2006,6 +2028,8 @@ attributes:
     alias: temp
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2105,7 +2129,7 @@ attributes:
     - PlantAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   perturbation:
     name: perturbation
@@ -2706,7 +2730,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   food_additive:
@@ -3699,6 +3723,8 @@ attributes:
     alias: samp_collect_method
     owner: FoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3716,7 +3742,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   samp_pooling:

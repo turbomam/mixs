@@ -1011,6 +1011,8 @@ attributes:
     alias: samp_name
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1064,6 +1066,7 @@ attributes:
     alias: pcr_primers
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1087,6 +1090,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1102,7 +1107,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   target_subfragment:
@@ -1121,6 +1126,7 @@ attributes:
     alias: target_subfragment
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1145,6 +1151,8 @@ attributes:
     alias: temp
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1208,6 +1216,7 @@ attributes:
     alias: pcr_cond
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1228,6 +1237,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1247,7 +1258,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1267,6 +1278,8 @@ attributes:
     alias: samp_size
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1307,6 +1320,7 @@ attributes:
     alias: isol_growth_condt
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1317,7 +1331,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   alt:
@@ -1341,6 +1355,8 @@ attributes:
     alias: alt
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1395,6 +1411,8 @@ attributes:
     alias: source_mat_id
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1426,6 +1444,7 @@ attributes:
     alias: extrachrom_elements
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1455,6 +1474,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1510,6 +1531,8 @@ attributes:
     alias: rel_to_oxygen
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - Mimag
     - MimarksC
@@ -1541,6 +1564,8 @@ attributes:
     alias: samp_collect_device
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1577,6 +1602,7 @@ attributes:
     alias: biotic_relationship
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsVi
@@ -1607,6 +1633,7 @@ attributes:
     alias: seq_quality_check
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1627,6 +1654,8 @@ attributes:
     alias: project_name
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1679,6 +1708,8 @@ attributes:
     alias: neg_cont_type
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1709,6 +1740,7 @@ attributes:
     alias: chimera_check
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1734,6 +1766,7 @@ attributes:
     alias: trophic_level
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MimarksC
@@ -1755,6 +1788,8 @@ attributes:
     alias: pos_cont_type
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1793,6 +1828,7 @@ attributes:
     alias: subspecf_gen_lin
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1829,6 +1865,8 @@ attributes:
     alias: env_local_scale
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1865,6 +1903,8 @@ attributes:
     alias: samp_mat_process
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1900,6 +1940,8 @@ attributes:
     alias: depth
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1945,6 +1987,8 @@ attributes:
     alias: samp_collect_method
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1962,7 +2006,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   env_medium:
@@ -1986,6 +2030,8 @@ attributes:
     alias: env_medium
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2023,6 +2069,8 @@ attributes:
     alias: samp_taxon_id
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2059,6 +2107,8 @@ attributes:
     alias: geo_loc_name
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2099,6 +2149,8 @@ attributes:
     alias: collection_date
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2133,6 +2185,8 @@ attributes:
     alias: seq_meth
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2173,6 +2227,8 @@ attributes:
     alias: lat_lon
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2217,6 +2273,8 @@ attributes:
     alias: elev
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2266,6 +2324,8 @@ attributes:
     alias: env_broad_scale
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2307,6 +2367,8 @@ attributes:
     alias: experimental_factor
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2339,6 +2401,7 @@ attributes:
     alias: target_gene
     owner: MimarksCSoil
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -2364,6 +2427,8 @@ attributes:
     alias: associated_resource
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2380,7 +2445,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -2402,6 +2467,8 @@ attributes:
     alias: sop
     owner: MimarksCSoil
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2418,7 +2485,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   cur_land_use:
     name: cur_land_use
@@ -2489,7 +2556,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   previous_land_use:
@@ -2501,7 +2568,7 @@ attributes:
     description: Previous land use and dates
     title: history/previous land use
     examples:
-    - value: fallow; 2018-05-11:T14:30Z
+    - value: fallow;2018-05-11T14:30Z
     from_schema: https://w3id.org/mixs
     keywords:
     - history
@@ -2534,7 +2601,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   crop_rotation:
@@ -2680,7 +2747,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   sieving:
@@ -2742,7 +2809,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   pool_dna_extracts:
@@ -2810,7 +2877,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   annual_temp:
@@ -2988,7 +3055,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   org_nitro:
@@ -3061,7 +3128,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   slope_gradient:
@@ -3186,7 +3253,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   ph:
@@ -3232,7 +3299,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   org_matter:
@@ -3312,7 +3379,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   tot_nitro_content:
@@ -3361,7 +3428,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   microbial_biomass:
@@ -3410,7 +3477,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   link_addit_analys:
@@ -3427,7 +3494,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   heavy_metals:
@@ -3475,7 +3542,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   al_sat:
     name: al_sat
@@ -3519,7 +3586,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   misc_param:

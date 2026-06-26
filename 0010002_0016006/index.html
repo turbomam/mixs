@@ -484,7 +484,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000024">MIXS:0000024</a></td>
-<td><a href="../0000024/">estimated_size</a></td>
+<td><a href="../0000024/">estimated_genome_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The estimated size of the genome prior to sequencing</td>
 </tr>
@@ -1017,6 +1017,8 @@ attributes:
     alias: samp_name
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1072,6 +1074,7 @@ attributes:
     alias: lib_screen
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1106,6 +1109,7 @@ attributes:
     alias: ref_db
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1131,6 +1135,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1146,7 +1152,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1165,6 +1171,7 @@ attributes:
     alias: lib_size
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1196,6 +1203,7 @@ attributes:
     alias: assembly_name
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1227,6 +1235,8 @@ attributes:
     alias: temp
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1313,6 +1323,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1332,7 +1344,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1352,6 +1364,8 @@ attributes:
     alias: samp_size
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1392,6 +1406,7 @@ attributes:
     alias: isol_growth_condt
     owner: MigsEuHumanSkin
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1402,7 +1417,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   alt:
@@ -1426,6 +1441,8 @@ attributes:
     alias: alt
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1447,8 +1464,8 @@ attributes:
       syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
       interpolated: true
       partial_match: true
-  estimated_size:
-    name: estimated_size
+  estimated_genome_size:
+    name: estimated_genome_size
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1456,7 +1473,9 @@ attributes:
     description: The estimated size of the genome prior to sequencing. Of particular
       importance in the sequencing of (eukaryotic) genome which could remain in draft
       form for a long or unspecified period
-    title: estimated size
+    title: estimated genome size
+    comments:
+    - Slot updated 2026-02-10 `estimated_size` and title 'estimated size'
     examples:
     - value: 300000 bp
     in_subset:
@@ -1466,7 +1485,7 @@ attributes:
     - size
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    alias: estimated_size
+    alias: estimated_genome_size
     owner: MigsEuHumanSkin
     domain_of:
     - MigsBa
@@ -1491,6 +1510,7 @@ attributes:
     alias: extrachrom_elements
     owner: MigsEuHumanSkin
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1529,6 +1549,8 @@ attributes:
     alias: source_mat_id
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1569,6 +1591,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1670,6 +1694,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1731,6 +1756,8 @@ attributes:
     alias: samp_collect_device
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1764,6 +1791,7 @@ attributes:
     alias: number_contig
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1794,6 +1822,7 @@ attributes:
     alias: biotic_relationship
     owner: MigsEuHumanSkin
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsVi
@@ -1844,6 +1873,7 @@ attributes:
     alias: lib_layout
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1888,6 +1918,7 @@ attributes:
     alias: assembly_qual
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1914,6 +1945,7 @@ attributes:
     alias: ref_biomaterial
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1925,7 +1957,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -1943,6 +1975,8 @@ attributes:
     alias: project_name
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1997,6 +2031,7 @@ attributes:
     alias: lib_vector
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2057,6 +2092,8 @@ attributes:
     alias: neg_cont_type
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2085,6 +2122,7 @@ attributes:
     alias: adapters
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2117,6 +2155,7 @@ attributes:
     alias: assembly_software
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2182,6 +2221,7 @@ attributes:
     alias: annot
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2210,6 +2250,7 @@ attributes:
     alias: trophic_level
     owner: MigsEuHumanSkin
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MimarksC
@@ -2231,6 +2272,8 @@ attributes:
     alias: pos_cont_type
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2269,6 +2312,7 @@ attributes:
     alias: subspecf_gen_lin
     owner: MigsEuHumanSkin
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2295,6 +2339,7 @@ attributes:
     alias: feat_pred
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2336,6 +2381,8 @@ attributes:
     alias: env_local_scale
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2401,6 +2448,8 @@ attributes:
     alias: samp_mat_process
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2430,6 +2479,7 @@ attributes:
     alias: sim_search_meth
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2505,6 +2555,8 @@ attributes:
     alias: depth
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2549,6 +2601,8 @@ attributes:
     alias: samp_collect_method
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2566,7 +2620,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   specific_host:
@@ -2618,6 +2672,8 @@ attributes:
     alias: env_medium
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2655,6 +2711,8 @@ attributes:
     alias: samp_taxon_id
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2691,6 +2749,8 @@ attributes:
     alias: geo_loc_name
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2731,6 +2791,8 @@ attributes:
     alias: collection_date
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2765,6 +2827,8 @@ attributes:
     alias: seq_meth
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2805,6 +2869,8 @@ attributes:
     alias: lat_lon
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2849,6 +2915,8 @@ attributes:
     alias: elev
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2897,6 +2965,8 @@ attributes:
     alias: env_broad_scale
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2932,6 +3002,7 @@ attributes:
     alias: tax_class
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2966,6 +3037,8 @@ attributes:
     alias: experimental_factor
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3003,6 +3076,8 @@ attributes:
     alias: associated_resource
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3019,7 +3094,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -3041,6 +3116,8 @@ attributes:
     alias: sop
     owner: MigsEuHumanSkin
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3057,7 +3134,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   dermatology_disord:
     name: dermatology_disord

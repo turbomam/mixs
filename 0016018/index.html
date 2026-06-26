@@ -411,7 +411,7 @@
 
 
 <h1 id="extension-agriculture-agriculture">Extension: agriculture (Agriculture)</h1>
-<p><em>A collection of terms appropriate when sequencing samples obtained in an agricultural environment.  Suitable to capture metadata appropriate to enhance crop productivity and agroecosystem health  with the aim to facilitate research of agricultural microbiomes and their relationships to plant productivity  and sustainable crop production from diverse crop management contexts.</em></p>
+<p><em>A collection of terms appropriate when sequencing samples obtained in an agricultural environment. Suitable to capture metadata appropriate to enhance crop productivity and agroecosystem health with the aim to facilitate research of agricultural microbiomes and their relationships to plant productivity and sustainable crop production from diverse crop management contexts.</em></p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
@@ -1408,9 +1408,9 @@ annotations:
       studies in agricultural sites; long-term ecological research in croplands; eDNA
       in manure samples; describing agricultural microbiome studies
 description: A collection of terms appropriate when sequencing samples obtained in
-  an agricultural environment.  Suitable to capture metadata appropriate to enhance
-  crop productivity and agroecosystem health  with the aim to facilitate research
-  of agricultural microbiomes and their relationships to plant productivity  and sustainable
+  an agricultural environment. Suitable to capture metadata appropriate to enhance
+  crop productivity and agroecosystem health with the aim to facilitate research of
+  agricultural microbiomes and their relationships to plant productivity and sustainable
   crop production from diverse crop management contexts.
 title: agriculture
 from_schema: https://w3id.org/mixs
@@ -1940,9 +1940,9 @@ annotations:
       studies in agricultural sites; long-term ecological research in croplands; eDNA
       in manure samples; describing agricultural microbiome studies
 description: A collection of terms appropriate when sequencing samples obtained in
-  an agricultural environment.  Suitable to capture metadata appropriate to enhance
-  crop productivity and agroecosystem health  with the aim to facilitate research
-  of agricultural microbiomes and their relationships to plant productivity  and sustainable
+  an agricultural environment. Suitable to capture metadata appropriate to enhance
+  crop productivity and agroecosystem health with the aim to facilitate research of
+  agricultural microbiomes and their relationships to plant productivity and sustainable
   crop production from diverse crop management contexts.
 title: agriculture
 from_schema: https://w3id.org/mixs
@@ -2364,7 +2364,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   samp_collect_method:
@@ -2383,6 +2383,8 @@ attributes:
     alias: samp_collect_method
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2400,7 +2402,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   enrichment_protocol:
@@ -2427,7 +2429,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   library_prep_kit:
@@ -2657,7 +2659,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   host_symbiont:
@@ -2894,6 +2896,8 @@ attributes:
     alias: elev
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3483,7 +3487,7 @@ attributes:
     - PlantAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   food_product_type:
     name: food_product_type
@@ -3808,6 +3812,8 @@ attributes:
     alias: depth
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3908,6 +3914,7 @@ attributes:
     alias: biotic_relationship
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsVi
@@ -4246,6 +4253,8 @@ attributes:
     alias: temp
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -4345,6 +4354,7 @@ attributes:
     alias: isol_growth_condt
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -4354,7 +4364,7 @@ attributes:
     - Agriculture
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_store_dur:
@@ -4465,6 +4475,8 @@ attributes:
     alias: samp_collect_device
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -4502,6 +4514,8 @@ attributes:
     alias: samp_mat_process
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -4852,6 +4866,7 @@ attributes:
     alias: trophic_level
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MimarksC
@@ -4897,6 +4912,8 @@ attributes:
     alias: samp_size
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -4969,6 +4986,8 @@ attributes:
     alias: seq_meth
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5015,6 +5034,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5072,6 +5093,7 @@ attributes:
     alias: pcr_primers
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -5095,6 +5117,8 @@ attributes:
     alias: nucl_acid_ext
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5114,7 +5138,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   nucl_acid_amp:
@@ -5132,6 +5156,8 @@ attributes:
     alias: nucl_acid_amp
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5147,7 +5173,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -5166,6 +5192,7 @@ attributes:
     alias: lib_size
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5193,6 +5220,7 @@ attributes:
     alias: lib_reads_seqd
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5222,6 +5250,7 @@ attributes:
     alias: lib_layout
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5254,6 +5283,7 @@ attributes:
     alias: lib_vector
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5287,6 +5317,7 @@ attributes:
     alias: lib_screen
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5315,6 +5346,7 @@ attributes:
     alias: target_gene
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -5336,6 +5368,7 @@ attributes:
     alias: target_subfragment
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -5358,6 +5391,7 @@ attributes:
     alias: mid
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -5385,6 +5419,7 @@ attributes:
     alias: adapters
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5427,6 +5462,7 @@ attributes:
     alias: pcr_cond
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -5454,6 +5490,7 @@ attributes:
     alias: seq_quality_check
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -5475,6 +5512,7 @@ attributes:
     alias: chimera_check
     owner: Agriculture
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -5503,6 +5541,7 @@ attributes:
     alias: assembly_name
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5547,6 +5586,7 @@ attributes:
     alias: assembly_qual
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5573,6 +5613,7 @@ attributes:
     alias: assembly_software
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5608,6 +5649,7 @@ attributes:
     alias: annot
     owner: Agriculture
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5640,6 +5682,8 @@ attributes:
     alias: associated_resource
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5656,7 +5700,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -5678,6 +5722,8 @@ attributes:
     alias: sop
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5693,7 +5739,7 @@ attributes:
     range: string
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   source_mat_id:
     name: source_mat_id
@@ -5728,6 +5774,8 @@ attributes:
     alias: source_mat_id
     owner: Agriculture
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -5798,7 +5846,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   soil_type:
@@ -5848,7 +5896,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   soil_horizon:
@@ -5888,7 +5936,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   link_class_info:
@@ -5921,7 +5969,7 @@ attributes:
     description: Previous land use and dates
     title: history/previous land use
     examples:
-    - value: fallow; 2018-05-11:T14:30Z
+    - value: fallow;2018-05-11T14:30Z
     from_schema: https://w3id.org/mixs
     keywords:
     - history
@@ -5956,7 +6004,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   crop_rotation:
@@ -6088,7 +6136,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   annual_temp:
@@ -6352,7 +6400,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   cur_vegetation:
@@ -6392,7 +6440,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   tot_org_carb:
@@ -6447,7 +6495,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   tot_nitro_content:
@@ -6498,7 +6546,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   microbial_biomass:
@@ -6549,7 +6597,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   heavy_metals_meth:
@@ -6572,7 +6620,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   tot_carb:

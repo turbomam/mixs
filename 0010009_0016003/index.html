@@ -1001,6 +1001,8 @@ attributes:
     alias: samp_name
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1054,6 +1056,7 @@ attributes:
     alias: pcr_primers
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1077,6 +1080,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1092,7 +1097,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   target_subfragment:
@@ -1111,6 +1116,7 @@ attributes:
     alias: target_subfragment
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1135,6 +1141,8 @@ attributes:
     alias: temp
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1198,6 +1206,7 @@ attributes:
     alias: pcr_cond
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1218,6 +1227,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1237,7 +1248,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1257,6 +1268,8 @@ attributes:
     alias: samp_size
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1297,6 +1310,7 @@ attributes:
     alias: isol_growth_condt
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1307,7 +1321,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   alt:
@@ -1331,6 +1345,8 @@ attributes:
     alias: alt
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1385,6 +1401,8 @@ attributes:
     alias: source_mat_id
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1416,6 +1434,7 @@ attributes:
     alias: extrachrom_elements
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1445,6 +1464,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1500,6 +1521,8 @@ attributes:
     alias: rel_to_oxygen
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - Mimag
     - MimarksC
@@ -1531,6 +1554,8 @@ attributes:
     alias: samp_collect_device
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1567,6 +1592,7 @@ attributes:
     alias: biotic_relationship
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsVi
@@ -1597,6 +1623,7 @@ attributes:
     alias: seq_quality_check
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1617,6 +1644,8 @@ attributes:
     alias: project_name
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1669,6 +1698,8 @@ attributes:
     alias: neg_cont_type
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1699,6 +1730,7 @@ attributes:
     alias: chimera_check
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -1724,6 +1756,7 @@ attributes:
     alias: trophic_level
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MimarksC
@@ -1745,6 +1778,8 @@ attributes:
     alias: pos_cont_type
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1783,6 +1818,7 @@ attributes:
     alias: subspecf_gen_lin
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1819,6 +1855,8 @@ attributes:
     alias: env_local_scale
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1855,6 +1893,8 @@ attributes:
     alias: samp_mat_process
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1890,6 +1930,8 @@ attributes:
     alias: depth
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1934,6 +1976,8 @@ attributes:
     alias: samp_collect_method
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1951,7 +1995,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   env_medium:
@@ -1975,6 +2019,8 @@ attributes:
     alias: env_medium
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2012,6 +2058,8 @@ attributes:
     alias: samp_taxon_id
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2048,6 +2096,8 @@ attributes:
     alias: geo_loc_name
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2088,6 +2138,8 @@ attributes:
     alias: collection_date
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2122,6 +2174,8 @@ attributes:
     alias: seq_meth
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2162,6 +2216,8 @@ attributes:
     alias: lat_lon
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2206,6 +2262,8 @@ attributes:
     alias: elev
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2254,6 +2312,8 @@ attributes:
     alias: env_broad_scale
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2295,6 +2355,8 @@ attributes:
     alias: experimental_factor
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2327,6 +2389,7 @@ attributes:
     alias: target_gene
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimarksCMisip
     - MimarksC
     - MimarksS
     - Agriculture
@@ -2352,6 +2415,8 @@ attributes:
     alias: associated_resource
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2368,7 +2433,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -2390,6 +2455,8 @@ attributes:
     alias: sop
     owner: MimarksCHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2406,7 +2473,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   host_subject_id:
     name: host_subject_id
@@ -3196,13 +3263,13 @@ attributes:
   nose_throat_disord:
     name: nose_throat_disord
     description: 'Report any history of nose, mouth, teeth and/or throat disorders
-      in the subject.  May include multiple disorders.
+      in the subject. May include multiple disorders.
 
       '
     title: nose throat disorder
     comments:
-    - 'The terms should be chosen from the DO (Human Disease Ontology)  at http://www.disease-ontology.org,
-      lung disease (https://disease-ontology.org/?id=DOID:850),  upper respiratory
+    - 'The terms should be chosen from the DO (Human Disease Ontology) at http://www.disease-ontology.org,
+      lung disease (https://disease-ontology.org/?id=DOID:850), upper respiratory
       tract disease (https://disease-ontology.org/?id=DOID:974)
 
       '

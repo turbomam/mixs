@@ -496,7 +496,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000024">MIXS:0000024</a></td>
-<td><a href="../0000024/">estimated_size</a></td>
+<td><a href="../0000024/">estimated_genome_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The estimated size of the genome prior to sequencing</td>
 </tr>
@@ -1121,6 +1121,8 @@ attributes:
     alias: samp_name
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1176,6 +1178,7 @@ attributes:
     alias: lib_screen
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1210,6 +1213,7 @@ attributes:
     alias: ref_db
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1235,6 +1239,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1250,7 +1256,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1269,6 +1275,7 @@ attributes:
     alias: lib_size
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1300,6 +1307,7 @@ attributes:
     alias: assembly_name
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1331,6 +1339,8 @@ attributes:
     alias: temp
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1417,6 +1427,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1436,7 +1448,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1456,6 +1468,8 @@ attributes:
     alias: samp_size
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1496,6 +1510,7 @@ attributes:
     alias: isol_growth_condt
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1506,7 +1521,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   alt:
@@ -1530,6 +1545,8 @@ attributes:
     alias: alt
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1584,6 +1601,8 @@ attributes:
     alias: source_mat_id
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1615,14 +1634,15 @@ attributes:
     alias: extrachrom_elements
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
     - MimarksC
     range: integer
     recommended: true
-  estimated_size:
-    name: estimated_size
+  estimated_genome_size:
+    name: estimated_genome_size
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1630,7 +1650,9 @@ attributes:
     description: The estimated size of the genome prior to sequencing. Of particular
       importance in the sequencing of (eukaryotic) genome which could remain in draft
       form for a long or unspecified period
-    title: estimated size
+    title: estimated genome size
+    comments:
+    - Slot updated 2026-02-10 `estimated_size` and title 'estimated size'
     examples:
     - value: 300000 bp
     in_subset:
@@ -1640,7 +1662,7 @@ attributes:
     - size
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    alias: estimated_size
+    alias: estimated_genome_size
     owner: MigsOrgSymbiontAssociated
     domain_of:
     - MigsBa
@@ -1674,6 +1696,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1727,6 +1751,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1762,6 +1787,8 @@ attributes:
     alias: samp_collect_device
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1795,6 +1822,7 @@ attributes:
     alias: number_contig
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1821,6 +1849,7 @@ attributes:
     alias: lib_layout
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1865,6 +1894,7 @@ attributes:
     alias: assembly_qual
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1890,6 +1920,7 @@ attributes:
     alias: ref_biomaterial
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1901,7 +1932,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -1919,6 +1950,8 @@ attributes:
     alias: project_name
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1973,6 +2006,7 @@ attributes:
     alias: lib_vector
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2000,6 +2034,7 @@ attributes:
     alias: adapters
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2034,6 +2069,8 @@ attributes:
     alias: neg_cont_type
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2062,6 +2099,7 @@ attributes:
     alias: assembly_software
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2127,6 +2165,7 @@ attributes:
     alias: annot
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2154,6 +2193,8 @@ attributes:
     alias: pos_cont_type
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2192,6 +2233,7 @@ attributes:
     alias: subspecf_gen_lin
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2218,6 +2260,7 @@ attributes:
     alias: feat_pred
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2259,6 +2302,8 @@ attributes:
     alias: env_local_scale
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2324,6 +2369,8 @@ attributes:
     alias: samp_mat_process
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2353,6 +2400,7 @@ attributes:
     alias: sim_search_meth
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2388,6 +2436,8 @@ attributes:
     alias: depth
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2432,6 +2482,8 @@ attributes:
     alias: samp_collect_method
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2449,7 +2501,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   env_medium:
@@ -2473,6 +2525,8 @@ attributes:
     alias: env_medium
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2510,6 +2564,8 @@ attributes:
     alias: samp_taxon_id
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2546,6 +2602,8 @@ attributes:
     alias: geo_loc_name
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2586,6 +2644,8 @@ attributes:
     alias: collection_date
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2620,6 +2680,8 @@ attributes:
     alias: seq_meth
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2660,6 +2722,8 @@ attributes:
     alias: lat_lon
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2704,6 +2768,8 @@ attributes:
     alias: elev
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2752,6 +2818,8 @@ attributes:
     alias: env_broad_scale
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2787,6 +2855,7 @@ attributes:
     alias: tax_class
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2821,6 +2890,8 @@ attributes:
     alias: experimental_factor
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2858,6 +2929,8 @@ attributes:
     alias: associated_resource
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2874,7 +2947,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -2896,6 +2969,8 @@ attributes:
     alias: sop
     owner: MigsOrgSymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2912,7 +2987,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   host_subject_id:
     name: host_subject_id
@@ -3349,7 +3424,7 @@ attributes:
     - SymbiontAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   host_substrate:
@@ -3792,7 +3867,7 @@ attributes:
       (e.g. intestines, heart).MIxS . Terms from other OBO ontologies are permissible
       as long as they reference mass/volume nouns (e.g. air, water, blood) and not
       discrete, countable entities (e.g. intestines, heart)'
-    title: host of the symbiotic host environemental medium
+    title: host of the symbiotic host environmental medium
     examples:
     - value: feces[uberon:0001988]
     from_schema: https://w3id.org/mixs

@@ -411,7 +411,7 @@
 
 
 <h1 id="extension-food-farm-environment-foodfarmenvironment">Extension: food-farm environment (FoodFarmEnvironment)</h1>
-<p><em>A collection of terms appropriate when collecting samples and performing sequencing of samples  obtained from the farm environment, including soil, manure, and food harvesting equipment.</em></p>
+<p><em>A collection of terms appropriate when collecting samples and performing sequencing of samples obtained from the farm environment, including soil, manure, and food harvesting equipment.</em></p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
@@ -1286,7 +1286,7 @@ annotations:
     value: Microbiome of farm and field crops as well as environmental samples including
       irrigation, soil amendments, and farm equipment.
 description: A collection of terms appropriate when collecting samples and performing
-  sequencing of samples  obtained from the farm environment, including soil, manure,
+  sequencing of samples obtained from the farm environment, including soil, manure,
   and food harvesting equipment.
 title: food-farm environment
 comments:
@@ -1551,7 +1551,7 @@ annotations:
     value: Microbiome of farm and field crops as well as environmental samples including
       irrigation, soil amendments, and farm equipment.
 description: A collection of terms appropriate when collecting samples and performing
-  sequencing of samples  obtained from the farm environment, including soil, manure,
+  sequencing of samples obtained from the farm environment, including soil, manure,
   and food harvesting equipment.
 title: food-farm environment
 comments:
@@ -1685,6 +1685,8 @@ attributes:
     alias: samp_name
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1735,6 +1737,8 @@ attributes:
     alias: project_name
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1788,6 +1792,8 @@ attributes:
     alias: lat_lon
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1829,6 +1835,8 @@ attributes:
     alias: geo_loc_name
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1869,6 +1877,8 @@ attributes:
     alias: collection_date
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1903,6 +1913,8 @@ attributes:
     alias: seq_meth
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1942,6 +1954,8 @@ attributes:
     alias: samp_size
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1986,6 +2000,8 @@ attributes:
     alias: samp_collect_device
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2018,6 +2034,8 @@ attributes:
     alias: nucl_acid_ext
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2036,7 +2054,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   humidity:
@@ -2364,6 +2382,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2411,7 +2431,7 @@ attributes:
     description: Previous land use and dates
     title: history/previous land use
     examples:
-    - value: fallow; 2018-05-11:T14:30Z
+    - value: fallow;2018-05-11T14:30Z
     from_schema: https://w3id.org/mixs
     keywords:
     - history
@@ -2469,7 +2489,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   tot_org_c_meth:
@@ -2493,7 +2513,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   tot_nitro_cont_meth:
@@ -2517,7 +2537,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   host_age:
@@ -2780,6 +2800,8 @@ attributes:
     alias: depth
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3030,6 +3052,8 @@ attributes:
     alias: temp
     owner: FoodFarmEnvironment
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3132,7 +3156,7 @@ attributes:
     - PlantAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   host_phenotype:
     name: host_phenotype
@@ -3454,7 +3478,7 @@ attributes:
     - PlantAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   root_med_ph:
@@ -3511,7 +3535,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   growth_medium:
@@ -5030,7 +5054,7 @@ attributes:
     - Soil
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   soil_type:
@@ -5337,7 +5361,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   food_quality_date:

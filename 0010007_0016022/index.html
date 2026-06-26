@@ -1325,6 +1325,8 @@ attributes:
     alias: samp_name
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1381,6 +1383,7 @@ attributes:
     alias: size_frac
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1407,6 +1410,7 @@ attributes:
     alias: lib_screen
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1442,6 +1446,7 @@ attributes:
     alias: ref_db
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1467,6 +1472,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1482,7 +1489,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1501,6 +1508,7 @@ attributes:
     alias: lib_size
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1531,6 +1539,7 @@ attributes:
     alias: mid
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1562,6 +1571,7 @@ attributes:
     alias: assembly_name
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1593,6 +1603,8 @@ attributes:
     alias: temp
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1646,6 +1658,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1665,7 +1679,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1685,6 +1699,8 @@ attributes:
     alias: samp_size
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1728,6 +1744,8 @@ attributes:
     alias: alt
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1782,6 +1800,8 @@ attributes:
     alias: source_mat_id
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1822,6 +1842,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1875,6 +1897,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1905,6 +1928,8 @@ attributes:
     alias: rel_to_oxygen
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - Mimag
     - MimarksC
@@ -1935,6 +1960,8 @@ attributes:
     alias: samp_collect_device
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1969,6 +1996,7 @@ attributes:
     alias: number_contig
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1996,6 +2024,7 @@ attributes:
     alias: lib_layout
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2041,6 +2070,7 @@ attributes:
     alias: assembly_qual
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2067,6 +2097,7 @@ attributes:
     alias: ref_biomaterial
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2078,7 +2109,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -2096,6 +2127,8 @@ attributes:
     alias: project_name
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2150,6 +2183,7 @@ attributes:
     alias: lib_vector
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2178,6 +2212,7 @@ attributes:
     alias: adapters
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2212,6 +2247,8 @@ attributes:
     alias: neg_cont_type
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2240,6 +2277,7 @@ attributes:
     alias: assembly_software
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2276,6 +2314,7 @@ attributes:
     alias: annot
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2303,6 +2342,8 @@ attributes:
     alias: pos_cont_type
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2333,6 +2374,7 @@ attributes:
     alias: feat_pred
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2374,6 +2416,8 @@ attributes:
     alias: env_local_scale
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2410,6 +2454,8 @@ attributes:
     alias: samp_mat_process
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2440,6 +2486,7 @@ attributes:
     alias: sim_search_meth
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2475,6 +2522,8 @@ attributes:
     alias: depth
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2519,6 +2568,8 @@ attributes:
     alias: samp_collect_method
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2537,7 +2588,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   env_medium:
@@ -2561,6 +2612,8 @@ attributes:
     alias: env_medium
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2598,6 +2651,8 @@ attributes:
     alias: samp_taxon_id
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2634,6 +2689,8 @@ attributes:
     alias: geo_loc_name
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2674,6 +2731,8 @@ attributes:
     alias: collection_date
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2708,6 +2767,8 @@ attributes:
     alias: seq_meth
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2748,6 +2809,8 @@ attributes:
     alias: lat_lon
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2792,6 +2855,8 @@ attributes:
     alias: elev
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2840,6 +2905,8 @@ attributes:
     alias: env_broad_scale
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2875,6 +2942,7 @@ attributes:
     alias: tax_class
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2909,6 +2977,8 @@ attributes:
     alias: experimental_factor
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2947,6 +3017,8 @@ attributes:
     alias: associated_resource
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2963,7 +3035,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -2985,6 +3057,8 @@ attributes:
     alias: sop
     owner: MimsFoodHumanFoods
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3001,7 +3075,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   organism_count:
     name: organism_count
@@ -3259,7 +3333,7 @@ attributes:
     - PlantAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   perturbation:
     name: perturbation
@@ -3860,7 +3934,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   food_additive:

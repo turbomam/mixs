@@ -490,7 +490,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000024">MIXS:0000024</a></td>
-<td><a href="../0000024/">estimated_size</a></td>
+<td><a href="../0000024/">estimated_genome_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The estimated size of the genome prior to sequencing</td>
 </tr>
@@ -1200,13 +1200,13 @@
 <td><a href="https://w3id.org/mixs/0000120">MIXS:0000120</a></td>
 <td><a href="../0000120/">tan</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td>Total Acid Number  (TAN) is a measurement of acidity that is determined by th...</td>
+<td>Total Acid Number (TAN) is a measurement of acidity that is determined by the...</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000126">MIXS:0000126</a></td>
 <td><a href="../0000126/">viscosity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A measure of oil's resistance  to gradual deformation by  shear stress  or  t...</td>
+<td>A measure of oil's resistance to gradual deformation by shear stress or tensi...</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000127">MIXS:0000127</a></td>
@@ -1218,25 +1218,25 @@
 <td><a href="https://w3id.org/mixs/0000131">MIXS:0000131</a></td>
 <td><a href="../0000131/">saturates_pc</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td>Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis method that d...</td>
+<td>Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that di...</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000133">MIXS:0000133</a></td>
 <td><a href="../0000133/">aromatics_pc</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td>Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis method that d...</td>
+<td>Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that di...</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000134">MIXS:0000134</a></td>
 <td><a href="../0000134/">resins_pc</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td>Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis method that d...</td>
+<td>Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that di...</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000135">MIXS:0000135</a></td>
 <td><a href="../0000135/">asphaltenes_pc</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td>Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis method that d...</td>
+<td>Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that di...</td>
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000752">MIXS:0000752</a></td>
@@ -1313,6 +1313,8 @@ attributes:
     alias: samp_name
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1368,6 +1370,7 @@ attributes:
     alias: lib_screen
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1402,6 +1405,7 @@ attributes:
     alias: ref_db
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1427,6 +1431,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1442,7 +1448,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1461,6 +1467,7 @@ attributes:
     alias: lib_size
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1492,6 +1499,7 @@ attributes:
     alias: assembly_name
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1523,6 +1531,8 @@ attributes:
     alias: temp
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1610,6 +1620,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1629,7 +1641,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1649,6 +1661,8 @@ attributes:
     alias: samp_size
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1689,6 +1703,7 @@ attributes:
     alias: isol_growth_condt
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1699,7 +1714,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   alt:
@@ -1723,6 +1738,8 @@ attributes:
     alias: alt
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1777,6 +1794,8 @@ attributes:
     alias: source_mat_id
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1793,8 +1812,8 @@ attributes:
     range: string
     recommended: true
     multivalued: true
-  estimated_size:
-    name: estimated_size
+  estimated_genome_size:
+    name: estimated_genome_size
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1802,7 +1821,9 @@ attributes:
     description: The estimated size of the genome prior to sequencing. Of particular
       importance in the sequencing of (eukaryotic) genome which could remain in draft
       form for a long or unspecified period
-    title: estimated size
+    title: estimated genome size
+    comments:
+    - Slot updated 2026-02-10 `estimated_size` and title 'estimated size'
     examples:
     - value: 300000 bp
     in_subset:
@@ -1812,7 +1833,7 @@ attributes:
     - size
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    alias: estimated_size
+    alias: estimated_genome_size
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
     - MigsBa
@@ -1846,6 +1867,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1924,6 +1947,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2008,6 +2032,8 @@ attributes:
     alias: samp_collect_device
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2041,6 +2067,7 @@ attributes:
     alias: number_contig
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2070,6 +2097,7 @@ attributes:
     alias: biotic_relationship
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsVi
@@ -2121,6 +2149,7 @@ attributes:
     alias: lib_layout
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2165,6 +2194,7 @@ attributes:
     alias: assembly_qual
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2190,6 +2220,7 @@ attributes:
     alias: ref_biomaterial
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2201,7 +2232,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -2219,6 +2250,8 @@ attributes:
     alias: project_name
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2273,6 +2306,7 @@ attributes:
     alias: lib_vector
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2334,6 +2368,8 @@ attributes:
     alias: neg_cont_type
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2388,6 +2424,7 @@ attributes:
     alias: adapters
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2420,6 +2457,7 @@ attributes:
     alias: assembly_software
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2485,6 +2523,7 @@ attributes:
     alias: annot
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2512,6 +2551,8 @@ attributes:
     alias: pos_cont_type
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2550,6 +2591,7 @@ attributes:
     alias: subspecf_gen_lin
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2576,6 +2618,7 @@ attributes:
     alias: feat_pred
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2617,6 +2660,8 @@ attributes:
     alias: env_local_scale
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2682,6 +2727,8 @@ attributes:
     alias: samp_mat_process
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2711,6 +2758,7 @@ attributes:
     alias: sim_search_meth
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2787,6 +2835,8 @@ attributes:
     alias: depth
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2831,6 +2881,8 @@ attributes:
     alias: samp_collect_method
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2848,7 +2900,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   specific_host:
@@ -2901,6 +2953,8 @@ attributes:
     alias: env_medium
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2938,6 +2992,8 @@ attributes:
     alias: samp_taxon_id
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2974,6 +3030,8 @@ attributes:
     alias: geo_loc_name
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3014,6 +3072,8 @@ attributes:
     alias: collection_date
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3048,6 +3108,8 @@ attributes:
     alias: seq_meth
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3088,6 +3150,8 @@ attributes:
     alias: lat_lon
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3132,6 +3196,8 @@ attributes:
     alias: elev
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3180,6 +3246,8 @@ attributes:
     alias: env_broad_scale
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3215,6 +3283,7 @@ attributes:
     alias: tax_class
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3249,6 +3318,8 @@ attributes:
     alias: experimental_factor
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3286,6 +3357,8 @@ attributes:
     alias: associated_resource
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3302,7 +3375,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -3324,6 +3397,8 @@ attributes:
     alias: sop
     owner: MigsViHydrocarbonResourcesFluidsSwabs
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3340,7 +3415,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   hcr:
     name: hcr
@@ -5212,9 +5287,9 @@ attributes:
       Preferred_unit:
         tag: Preferred_unit
         value: milligram per liter
-    description: 'Total Acid Number  (TAN) is a measurement of acidity that is determined
-      by the amount of  potassium hydroxide  in milligrams that is needed to neutralize
-      the acids in one gram of oil.  It is an important quality measurement of  crude
+    description: 'Total Acid Number (TAN) is a measurement of acidity that is determined
+      by the amount of potassium hydroxide in milligrams that is needed to neutralize
+      the acids in one gram of oil. It is an important quality measurement of crude
       oil. (source: https://en.wikipedia.org/wiki/Total_acid_number)'
     title: total acid number
     from_schema: https://w3id.org/mixs
@@ -5242,8 +5317,8 @@ attributes:
       Preferred_unit:
         tag: Preferred_unit
         value: cP at degree Celsius
-    description: A measure of oil's resistance  to gradual deformation by  shear stress  or  tensile
-      stress (e.g. 3.5 cp; 100   C)
+    description: A measure of oil's resistance to gradual deformation by shear stress
+      or tensile stress (e.g. 3.5 cp; 100 °C)
     title: viscosity
     from_schema: https://w3id.org/mixs
     string_serialization: '{float} {unit};{float} {unit}'
@@ -5261,9 +5336,9 @@ attributes:
         tag: Preferred_unit
         value: degree Celsius
     description: 'Temperature at which a liquid becomes semi solid and loses its flow
-      characteristics. In crude oil a high  pour point  is generally associated with
+      characteristics. In crude oil a high pour point is generally associated with
       a high paraffin content, typically found in crude deriving from a larger proportion
-      of plant material. (soure: https://en.wikipedia.org/wiki/pour_point)'
+      of plant material. (source: https://en.wikipedia.org/wiki/pour_point)'
     title: pour point
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000127
@@ -5283,11 +5358,10 @@ attributes:
       Preferred_unit:
         tag: Preferred_unit
         value: percent
-    description: 'Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis
-      method that divides  crude oil  components according to their polarizability
-      and polarity. There are three main methods to obtain SARA results. The most
-      popular one is known as the Iatroscan TLC-FID and is referred to as IP-143 (source:
-      https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
+    description: 'Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method
+      that divides crude oil components according to their polarizability and polarity.
+      There are three main methods to obtain SARA results. The most popular one is
+      known as the Iatroscan TLC-FID and is referred to as IP-143 (source: https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
     title: saturates wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000131
@@ -5308,11 +5382,10 @@ attributes:
       Preferred_unit:
         tag: Preferred_unit
         value: percent
-    description: 'Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis
-      method that divides  crude oil  components according to their polarizability
-      and polarity. There are three main methods to obtain SARA results. The most
-      popular one is known as the Iatroscan TLC-FID and is referred to as IP-143 (source:
-      https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
+    description: 'Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method
+      that divides crude oil components according to their polarizability and polarity.
+      There are three main methods to obtain SARA results. The most popular one is
+      known as the Iatroscan TLC-FID and is referred to as IP-143 (source: https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
     title: aromatics wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000133
@@ -5333,11 +5406,10 @@ attributes:
       Preferred_unit:
         tag: Preferred_unit
         value: percent
-    description: 'Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis
-      method that divides  crude oil  components according to their polarizability
-      and polarity. There are three main methods to obtain SARA results. The most
-      popular one is known as the Iatroscan TLC-FID and is referred to as IP-143 (source:
-      https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
+    description: 'Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method
+      that divides crude oil components according to their polarizability and polarity.
+      There are three main methods to obtain SARA results. The most popular one is
+      known as the Iatroscan TLC-FID and is referred to as IP-143 (source: https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
     title: resins wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000134
@@ -5358,11 +5430,10 @@ attributes:
       Preferred_unit:
         tag: Preferred_unit
         value: percent
-    description: 'Saturate, Aromatic, Resin and Asphaltene  (SARA) is an analysis
-      method that divides  crude oil  components according to their polarizability
-      and polarity. There are three main methods to obtain SARA results. The most
-      popular one is known as the Iatroscan TLC-FID and is referred to as IP-143 (source:
-      https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
+    description: 'Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method
+      that divides crude oil components according to their polarizability and polarity.
+      There are three main methods to obtain SARA results. The most popular one is
+      known as the Iatroscan TLC-FID and is referred to as IP-143 (source: https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene)'
     title: asphaltenes wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000135

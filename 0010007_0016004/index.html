@@ -945,6 +945,8 @@ attributes:
     alias: samp_name
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1001,6 +1003,7 @@ attributes:
     alias: size_frac
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1027,6 +1030,7 @@ attributes:
     alias: lib_screen
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1062,6 +1066,7 @@ attributes:
     alias: ref_db
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1087,6 +1092,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1102,7 +1109,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1121,6 +1128,7 @@ attributes:
     alias: lib_size
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1151,6 +1159,7 @@ attributes:
     alias: mid
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1182,6 +1191,7 @@ attributes:
     alias: assembly_name
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1213,6 +1223,8 @@ attributes:
     alias: temp
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1266,6 +1278,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1285,7 +1299,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1305,6 +1319,8 @@ attributes:
     alias: samp_size
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1348,6 +1364,8 @@ attributes:
     alias: alt
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1402,6 +1420,8 @@ attributes:
     alias: source_mat_id
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1442,6 +1462,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1495,6 +1517,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1525,6 +1548,8 @@ attributes:
     alias: rel_to_oxygen
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - Mimag
     - MimarksC
@@ -1555,6 +1580,8 @@ attributes:
     alias: samp_collect_device
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1589,6 +1616,7 @@ attributes:
     alias: number_contig
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1616,6 +1644,7 @@ attributes:
     alias: lib_layout
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1661,6 +1690,7 @@ attributes:
     alias: assembly_qual
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1687,6 +1717,7 @@ attributes:
     alias: ref_biomaterial
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1698,7 +1729,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -1716,6 +1747,8 @@ attributes:
     alias: project_name
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1770,6 +1803,7 @@ attributes:
     alias: lib_vector
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1798,6 +1832,7 @@ attributes:
     alias: adapters
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1832,6 +1867,8 @@ attributes:
     alias: neg_cont_type
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1860,6 +1897,7 @@ attributes:
     alias: assembly_software
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1896,6 +1934,7 @@ attributes:
     alias: annot
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1923,6 +1962,8 @@ attributes:
     alias: pos_cont_type
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1953,6 +1994,7 @@ attributes:
     alias: feat_pred
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1994,6 +2036,8 @@ attributes:
     alias: env_local_scale
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2030,6 +2074,8 @@ attributes:
     alias: samp_mat_process
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2060,6 +2106,7 @@ attributes:
     alias: sim_search_meth
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2095,6 +2142,8 @@ attributes:
     alias: depth
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2139,6 +2188,8 @@ attributes:
     alias: samp_collect_method
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2157,7 +2208,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   env_medium:
@@ -2181,6 +2232,8 @@ attributes:
     alias: env_medium
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2218,6 +2271,8 @@ attributes:
     alias: samp_taxon_id
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2254,6 +2309,8 @@ attributes:
     alias: geo_loc_name
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2294,6 +2351,8 @@ attributes:
     alias: collection_date
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2328,6 +2387,8 @@ attributes:
     alias: seq_meth
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2368,6 +2429,8 @@ attributes:
     alias: lat_lon
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2412,6 +2475,8 @@ attributes:
     alias: elev
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2460,6 +2525,8 @@ attributes:
     alias: env_broad_scale
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2495,6 +2562,7 @@ attributes:
     alias: tax_class
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2529,6 +2597,8 @@ attributes:
     alias: experimental_factor
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2567,6 +2637,8 @@ attributes:
     alias: associated_resource
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2583,7 +2655,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -2605,6 +2677,8 @@ attributes:
     alias: sop
     owner: MimsHumanGut
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2621,7 +2695,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   gastrointest_disord:
     name: gastrointest_disord

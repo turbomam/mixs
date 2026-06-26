@@ -490,7 +490,7 @@
 </tr>
 <tr>
 <td><a href="https://w3id.org/mixs/0000024">MIXS:0000024</a></td>
-<td><a href="../0000024/">estimated_size</a></td>
+<td><a href="../0000024/">estimated_genome_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The estimated size of the genome prior to sequencing</td>
 </tr>
@@ -1319,6 +1319,8 @@ attributes:
     alias: samp_name
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1374,6 +1376,7 @@ attributes:
     alias: lib_screen
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1408,6 +1411,7 @@ attributes:
     alias: ref_db
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1433,6 +1437,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1448,7 +1454,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1467,6 +1473,7 @@ attributes:
     alias: lib_size
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1498,6 +1505,7 @@ attributes:
     alias: assembly_name
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1529,6 +1537,8 @@ attributes:
     alias: temp
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1615,6 +1625,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1634,7 +1646,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1654,6 +1666,8 @@ attributes:
     alias: samp_size
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1694,6 +1708,7 @@ attributes:
     alias: isol_growth_condt
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1704,7 +1719,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   alt:
@@ -1728,6 +1743,8 @@ attributes:
     alias: alt
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1782,6 +1799,8 @@ attributes:
     alias: source_mat_id
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1798,8 +1817,8 @@ attributes:
     range: string
     recommended: true
     multivalued: true
-  estimated_size:
-    name: estimated_size
+  estimated_genome_size:
+    name: estimated_genome_size
     annotations:
       Expected_value:
         tag: Expected_value
@@ -1807,7 +1826,9 @@ attributes:
     description: The estimated size of the genome prior to sequencing. Of particular
       importance in the sequencing of (eukaryotic) genome which could remain in draft
       form for a long or unspecified period
-    title: estimated size
+    title: estimated genome size
+    comments:
+    - Slot updated 2026-02-10 `estimated_size` and title 'estimated size'
     examples:
     - value: 300000 bp
     in_subset:
@@ -1817,7 +1838,7 @@ attributes:
     - size
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    alias: estimated_size
+    alias: estimated_genome_size
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
     - MigsBa
@@ -1851,6 +1872,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1904,6 +1927,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1988,6 +2012,8 @@ attributes:
     alias: samp_collect_device
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2021,6 +2047,7 @@ attributes:
     alias: number_contig
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2047,6 +2074,7 @@ attributes:
     alias: lib_layout
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2091,6 +2119,7 @@ attributes:
     alias: assembly_qual
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2116,6 +2145,7 @@ attributes:
     alias: ref_biomaterial
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2127,7 +2157,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -2145,6 +2175,8 @@ attributes:
     alias: project_name
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2199,6 +2231,7 @@ attributes:
     alias: lib_vector
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2259,6 +2292,8 @@ attributes:
     alias: neg_cont_type
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2287,6 +2322,7 @@ attributes:
     alias: adapters
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2319,6 +2355,7 @@ attributes:
     alias: assembly_software
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2384,6 +2421,7 @@ attributes:
     alias: annot
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2411,6 +2449,8 @@ attributes:
     alias: pos_cont_type
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2449,6 +2489,7 @@ attributes:
     alias: subspecf_gen_lin
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2475,6 +2516,7 @@ attributes:
     alias: feat_pred
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2516,6 +2558,8 @@ attributes:
     alias: env_local_scale
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2581,6 +2625,8 @@ attributes:
     alias: samp_mat_process
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2610,6 +2656,7 @@ attributes:
     alias: sim_search_meth
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2645,6 +2692,8 @@ attributes:
     alias: depth
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2689,6 +2738,8 @@ attributes:
     alias: samp_collect_method
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2706,7 +2757,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   specific_host:
@@ -2759,6 +2810,8 @@ attributes:
     alias: env_medium
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2796,6 +2849,8 @@ attributes:
     alias: samp_taxon_id
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2832,6 +2887,8 @@ attributes:
     alias: geo_loc_name
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2872,6 +2929,8 @@ attributes:
     alias: collection_date
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2906,6 +2965,8 @@ attributes:
     alias: seq_meth
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2946,6 +3007,8 @@ attributes:
     alias: lat_lon
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2990,6 +3053,8 @@ attributes:
     alias: elev
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3038,6 +3103,8 @@ attributes:
     alias: env_broad_scale
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3073,6 +3140,7 @@ attributes:
     alias: tax_class
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3107,6 +3175,8 @@ attributes:
     alias: experimental_factor
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3144,6 +3214,8 @@ attributes:
     alias: associated_resource
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3160,7 +3232,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -3182,6 +3254,8 @@ attributes:
     alias: sop
     owner: MigsPlFoodAnimalAndAnimalFeed
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -3198,7 +3272,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   organism_count:
     name: organism_count
@@ -4208,7 +4282,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   food_additive:

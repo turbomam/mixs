@@ -1043,6 +1043,8 @@ attributes:
     alias: samp_name
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1099,6 +1101,7 @@ attributes:
     alias: size_frac
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1125,6 +1128,7 @@ attributes:
     alias: lib_screen
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1160,6 +1164,7 @@ attributes:
     alias: ref_db
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1185,6 +1190,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1200,7 +1207,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1219,6 +1226,7 @@ attributes:
     alias: lib_size
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1249,6 +1257,7 @@ attributes:
     alias: mid
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1280,6 +1289,7 @@ attributes:
     alias: assembly_name
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1311,6 +1321,8 @@ attributes:
     alias: temp
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1364,6 +1376,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1383,7 +1397,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1403,6 +1417,8 @@ attributes:
     alias: samp_size
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1446,6 +1462,8 @@ attributes:
     alias: alt
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1500,6 +1518,8 @@ attributes:
     alias: source_mat_id
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1540,6 +1560,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1593,6 +1615,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1623,6 +1646,8 @@ attributes:
     alias: rel_to_oxygen
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - Mimag
     - MimarksC
@@ -1653,6 +1678,8 @@ attributes:
     alias: samp_collect_device
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1687,6 +1714,7 @@ attributes:
     alias: number_contig
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1714,6 +1742,7 @@ attributes:
     alias: lib_layout
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1759,6 +1788,7 @@ attributes:
     alias: assembly_qual
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1785,6 +1815,7 @@ attributes:
     alias: ref_biomaterial
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1796,7 +1827,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -1814,6 +1845,8 @@ attributes:
     alias: project_name
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1868,6 +1901,7 @@ attributes:
     alias: lib_vector
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1896,6 +1930,7 @@ attributes:
     alias: adapters
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1930,6 +1965,8 @@ attributes:
     alias: neg_cont_type
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1958,6 +1995,7 @@ attributes:
     alias: assembly_software
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1994,6 +2032,7 @@ attributes:
     alias: annot
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2021,6 +2060,8 @@ attributes:
     alias: pos_cont_type
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2051,6 +2092,7 @@ attributes:
     alias: feat_pred
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2092,6 +2134,8 @@ attributes:
     alias: env_local_scale
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2128,6 +2172,8 @@ attributes:
     alias: samp_mat_process
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2158,6 +2204,7 @@ attributes:
     alias: sim_search_meth
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2193,6 +2240,8 @@ attributes:
     alias: depth
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2237,6 +2286,8 @@ attributes:
     alias: samp_collect_method
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2255,7 +2306,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   env_medium:
@@ -2279,6 +2330,8 @@ attributes:
     alias: env_medium
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2316,6 +2369,8 @@ attributes:
     alias: samp_taxon_id
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2352,6 +2407,8 @@ attributes:
     alias: geo_loc_name
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2392,6 +2449,8 @@ attributes:
     alias: collection_date
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2426,6 +2485,8 @@ attributes:
     alias: seq_meth
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2466,6 +2527,8 @@ attributes:
     alias: lat_lon
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2510,6 +2573,8 @@ attributes:
     alias: elev
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2558,6 +2623,8 @@ attributes:
     alias: env_broad_scale
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2593,6 +2660,7 @@ attributes:
     alias: tax_class
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2627,6 +2695,8 @@ attributes:
     alias: experimental_factor
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2665,6 +2735,8 @@ attributes:
     alias: associated_resource
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2681,7 +2753,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -2703,6 +2775,8 @@ attributes:
     alias: sop
     owner: MimsHumanAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2719,7 +2793,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   host_subject_id:
     name: host_subject_id
@@ -3509,13 +3583,13 @@ attributes:
   nose_throat_disord:
     name: nose_throat_disord
     description: 'Report any history of nose, mouth, teeth and/or throat disorders
-      in the subject.  May include multiple disorders.
+      in the subject. May include multiple disorders.
 
       '
     title: nose throat disorder
     comments:
-    - 'The terms should be chosen from the DO (Human Disease Ontology)  at http://www.disease-ontology.org,
-      lung disease (https://disease-ontology.org/?id=DOID:850),  upper respiratory
+    - 'The terms should be chosen from the DO (Human Disease Ontology) at http://www.disease-ontology.org,
+      lung disease (https://disease-ontology.org/?id=DOID:850), upper respiratory
       tract disease (https://disease-ontology.org/?id=DOID:974)
 
       '

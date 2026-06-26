@@ -411,7 +411,7 @@
 
 
 <h1 id="extension-host-associated-hostassociated">Extension: host-associated (HostAssociated)</h1>
-<p><em>A collection of terms appropriate when collecting samples and sequencing samples  obtained from a non-human host, to examine the host-associated microbiome or genome.</em></p>
+<p><em>A collection of terms appropriate when collecting samples and sequencing samples obtained from a non-human host, to examine the host-associated microbiome or genome.</em></p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
@@ -745,7 +745,7 @@ annotations:
     tag: use_cases
     value: elephant fecal matter or cat oral cavity
 description: A collection of terms appropriate when collecting samples and sequencing
-  samples  obtained from a non-human host, to examine the host-associated microbiome
+  samples obtained from a non-human host, to examine the host-associated microbiome
   or genome.
 title: host-associated
 comments:
@@ -913,7 +913,7 @@ annotations:
     tag: use_cases
     value: elephant fecal matter or cat oral cavity
 description: A collection of terms appropriate when collecting samples and sequencing
-  samples  obtained from a non-human host, to examine the host-associated microbiome
+  samples obtained from a non-human host, to examine the host-associated microbiome
   or genome.
 title: host-associated
 comments:
@@ -1041,6 +1041,8 @@ attributes:
     alias: samp_name
     owner: HostAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1091,6 +1093,8 @@ attributes:
     alias: project_name
     owner: HostAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1147,6 +1151,8 @@ attributes:
     alias: alt
     owner: HostAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1189,6 +1195,8 @@ attributes:
     alias: depth
     owner: HostAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1239,6 +1247,8 @@ attributes:
     alias: elev
     owner: HostAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1323,7 +1333,7 @@ attributes:
     - PlantAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   host_common_name:
     name: host_common_name
@@ -1848,7 +1858,7 @@ attributes:
     - SymbiontAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   host_substrate:
@@ -2278,6 +2288,8 @@ attributes:
     alias: temp
     owner: HostAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2385,6 +2397,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: HostAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg

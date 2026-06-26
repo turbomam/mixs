@@ -939,6 +939,8 @@ attributes:
     alias: samp_name
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -995,6 +997,7 @@ attributes:
     alias: size_frac
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1021,6 +1024,7 @@ attributes:
     alias: lib_screen
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1056,6 +1060,7 @@ attributes:
     alias: ref_db
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1081,6 +1086,8 @@ attributes:
     alias: nucl_acid_amp
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1096,7 +1103,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   lib_size:
@@ -1115,6 +1122,7 @@ attributes:
     alias: lib_size
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1145,6 +1153,7 @@ attributes:
     alias: mid
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - Mimag
     - MimarksS
     - Mims
@@ -1176,6 +1185,7 @@ attributes:
     alias: assembly_name
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1207,6 +1217,8 @@ attributes:
     alias: temp
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1260,6 +1272,8 @@ attributes:
     alias: nucl_acid_ext
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1279,7 +1293,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   samp_size:
@@ -1299,6 +1313,8 @@ attributes:
     alias: samp_size
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1342,6 +1358,8 @@ attributes:
     alias: alt
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1396,6 +1414,8 @@ attributes:
     alias: source_mat_id
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1436,6 +1456,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1489,6 +1511,7 @@ attributes:
     alias: lib_reads_seqd
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1519,6 +1542,8 @@ attributes:
     alias: rel_to_oxygen
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - Mimag
     - MimarksC
@@ -1549,6 +1574,8 @@ attributes:
     alias: samp_collect_device
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1583,6 +1610,7 @@ attributes:
     alias: number_contig
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1610,6 +1638,7 @@ attributes:
     alias: lib_layout
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1655,6 +1684,7 @@ attributes:
     alias: assembly_qual
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1681,6 +1711,7 @@ attributes:
     alias: ref_biomaterial
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1692,7 +1723,7 @@ attributes:
     - Miuvig
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
       partial_match: true
   project_name:
@@ -1710,6 +1741,8 @@ attributes:
     alias: project_name
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1764,6 +1797,7 @@ attributes:
     alias: lib_vector
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1792,6 +1826,7 @@ attributes:
     alias: adapters
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1826,6 +1861,8 @@ attributes:
     alias: neg_cont_type
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1854,6 +1891,7 @@ attributes:
     alias: assembly_software
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1890,6 +1928,7 @@ attributes:
     alias: annot
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1917,6 +1956,8 @@ attributes:
     alias: pos_cont_type
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1947,6 +1988,7 @@ attributes:
     alias: feat_pred
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1988,6 +2030,8 @@ attributes:
     alias: env_local_scale
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2024,6 +2068,8 @@ attributes:
     alias: samp_mat_process
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2054,6 +2100,7 @@ attributes:
     alias: sim_search_meth
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2089,6 +2136,8 @@ attributes:
     alias: depth
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2133,6 +2182,8 @@ attributes:
     alias: samp_collect_method
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2151,7 +2202,7 @@ attributes:
     range: string
     recommended: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   env_medium:
@@ -2175,6 +2226,8 @@ attributes:
     alias: env_medium
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2212,6 +2265,8 @@ attributes:
     alias: samp_taxon_id
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2248,6 +2303,8 @@ attributes:
     alias: geo_loc_name
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2288,6 +2345,8 @@ attributes:
     alias: collection_date
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2322,6 +2381,8 @@ attributes:
     alias: seq_meth
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2362,6 +2423,8 @@ attributes:
     alias: lat_lon
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2406,6 +2469,8 @@ attributes:
     alias: elev
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2454,6 +2519,8 @@ attributes:
     alias: env_broad_scale
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2489,6 +2556,7 @@ attributes:
     alias: tax_class
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2523,6 +2591,8 @@ attributes:
     alias: experimental_factor
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2561,6 +2631,8 @@ attributes:
     alias: associated_resource
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2577,7 +2649,7 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   sop:
     name: sop
@@ -2599,6 +2671,8 @@ attributes:
     alias: sop
     owner: MimsHumanOral
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2615,14 +2689,14 @@ attributes:
     recommended: true
     multivalued: true
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}$
+      syntax: ^({PMID}|{DOI}|{URL})$
       interpolated: true
   nose_mouth_teeth_throat_disord:
     name: nose_mouth_teeth_throat_disord
     description: 'History of nose/mouth/teeth/throat disorders; can include multiple
       disorders. The terms should be chosen from the DO (Human Disease Ontology) at
       http://www.disease-ontology.org, nose disease (https://disease-ontology.org/?id=DOID:2825),
-      mouth disease (https://disease-ontology.org/?id=DOID:403),  tooth disease (https://disease-ontology.org/?id=DOID:1091),
+      mouth disease (https://disease-ontology.org/?id=DOID:403), tooth disease (https://disease-ontology.org/?id=DOID:1091),
       or upper respiratory tract disease (https://disease-ontology.org/?id=DOID:974)
 
       '

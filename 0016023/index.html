@@ -411,7 +411,7 @@
 
 
 <h1 id="extension-symbiont-associated-symbiontassociated">Extension: symbiont-associated (SymbiontAssociated)</h1>
-<p><em>A collection of terms appropriate when collecting samples and sequencing samples  obtained from an organism that lives in close association with any other organism(s).</em></p>
+<p><em>A collection of terms appropriate when collecting samples and sequencing samples obtained from an organism that lives in close association with any other organism(s).</em></p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
@@ -859,7 +859,7 @@ annotations:
     tag: use_cases
     value: the microbiome sequence of a flea sampled from a farm animal
 description: A collection of terms appropriate when collecting samples and sequencing
-  samples  obtained from an organism that lives in close association with any other
+  samples obtained from an organism that lives in close association with any other
   organism(s).
 title: symbiont-associated
 from_schema: https://w3id.org/mixs
@@ -1005,7 +1005,7 @@ annotations:
     tag: use_cases
     value: the microbiome sequence of a flea sampled from a farm animal
 description: A collection of terms appropriate when collecting samples and sequencing
-  samples  obtained from an organism that lives in close association with any other
+  samples obtained from an organism that lives in close association with any other
   organism(s).
 title: symbiont-associated
 from_schema: https://w3id.org/mixs
@@ -1092,6 +1092,8 @@ attributes:
     alias: samp_name
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1142,6 +1144,8 @@ attributes:
     alias: project_name
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1195,6 +1199,8 @@ attributes:
     alias: lat_lon
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1236,6 +1242,8 @@ attributes:
     alias: geo_loc_name
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1276,6 +1284,8 @@ attributes:
     alias: collection_date
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1315,6 +1325,8 @@ attributes:
     alias: alt
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1357,6 +1369,8 @@ attributes:
     alias: depth
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1407,6 +1421,8 @@ attributes:
     alias: elev
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1540,6 +1556,8 @@ attributes:
     alias: source_mat_id
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1918,7 +1936,7 @@ attributes:
     - SymbiontAssociated
     range: string
     structured_pattern:
-      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      syntax: ^({PMID}|{DOI}|{URL}|{text})$
       interpolated: true
       partial_match: true
   host_substrate:
@@ -2361,7 +2379,7 @@ attributes:
       (e.g. intestines, heart).MIxS . Terms from other OBO ontologies are permissible
       as long as they reference mass/volume nouns (e.g. air, water, blood) and not
       discrete, countable entities (e.g. intestines, heart)'
-    title: host of the symbiotic host environemental medium
+    title: host of the symbiotic host environmental medium
     examples:
     - value: feces[uberon:0001988]
     from_schema: https://w3id.org/mixs
@@ -2761,6 +2779,8 @@ attributes:
     alias: temp
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2868,6 +2888,8 @@ attributes:
     alias: samp_vol_we_dna_ext
     owner: SymbiontAssociated
     domain_of:
+    - MimsMisip
+    - MimarksCMisip
     - MigsBa
     - MigsEu
     - MigsOrg
