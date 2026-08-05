@@ -458,6 +458,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../releasing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releasing MIxS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../schema_element_deprecation_guide/" class="md-nav__link">
         
   
@@ -632,6 +660,62 @@
     
   
     v6.0.0 to v7.0.0 (counts)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-changes/v7.0.0_to_v7.0.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v7.0.0 to v7.0.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-changes/v7.0.0_to_v7.0.1-counts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v7.0.0 to v7.0.1 (counts)
   
 
     
@@ -2075,7 +2159,7 @@ attributes:
     range: string
     required: true
     structured_pattern:
-      syntax: ^{text}|({termLabel} \[{termID}\])$
+      syntax: ^({text}|({termLabel} \[{termID}\]))$
       interpolated: true
       partial_match: true
   samp_size:
@@ -3190,7 +3274,7 @@ attributes:
     range: string
     multivalued: true
     structured_pattern:
-      syntax: ^({termLabel} \[{termID}\])|{integer}$
+      syntax: ^(({termLabel} \[{termID}\])|{integer})$
       interpolated: true
       partial_match: true
   cult_target:
@@ -3991,7 +4075,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{text}|({termLabel} \[{termID}\])$
+      syntax: ^({text}|({termLabel} \[{termID}\]))$
       interpolated: true
       partial_match: true
   microb_start:
@@ -4116,7 +4200,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^({termLabel} \[{termID}\])|{integer}$
+      syntax: ^(({termLabel} \[{termID}\])|{integer})$
       interpolated: true
       partial_match: true
   nucl_acid_ext_kit:
@@ -4392,7 +4476,7 @@ attributes:
     - FoodHumanFoods
     range: string
     structured_pattern:
-      syntax: ^{text}|({termLabel} \[{termID}\])$
+      syntax: ^({text}|({termLabel} \[{termID}\]))$
       interpolated: true
       partial_match: true
   samp_transport_cont:
@@ -4557,7 +4641,7 @@ attributes:
     range: string
     multivalued: true
     structured_pattern:
-      syntax: ^({termLabel} \[{termID}\])|{integer}$
+      syntax: ^(({termLabel} \[{termID}\])|{integer})$
       interpolated: true
       partial_match: true
   spikein_AMR:
@@ -4636,7 +4720,7 @@ attributes:
     range: string
     multivalued: true
     structured_pattern:
-      syntax: ^{text}|({termLabel} \[{termID}\])$
+      syntax: ^({text}|({termLabel} \[{termID}\]))$
       interpolated: true
       partial_match: true
   spikein_metal:
@@ -4686,7 +4770,7 @@ attributes:
     range: string
     multivalued: true
     structured_pattern:
-      syntax: ^({termLabel} \[{termID}\])|{integer}$
+      syntax: ^(({termLabel} \[{termID}\])|{integer})$
       interpolated: true
       partial_match: true
   spikein_serovar:

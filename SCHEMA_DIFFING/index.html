@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://GenomicsStandardsConsortium.github.io/mixs/SCHEMA_DIFFING/">
       
       
-        <link rel="prev" href="../version-changes/v6.0.0_to_v7.0.0-counts/">
+        <link rel="prev" href="../version-changes/v7.0.0_to_v7.0.1-counts/">
       
       
       
@@ -460,6 +460,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../releasing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releasing MIxS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../schema_element_deprecation_guide/" class="md-nav__link">
         
   
@@ -634,6 +662,62 @@
     
   
     v6.0.0 to v7.0.0 (counts)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-changes/v7.0.0_to_v7.0.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v7.0.0 to v7.0.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-changes/v7.0.0_to_v7.0.1-counts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v7.0.0 to v7.0.1 (counts)
   
 
     
@@ -1132,7 +1216,7 @@ make purge-diff DIFF=v5_to_v6.0.0
 poetry run python src/scripts/v5_to_v6_onetime_diff.py
 </code></pre>
 <p>Step 4 writes <code>assets/diff_results/v5_to_v6.0.0/schema_comparison_results.yaml</code>
-(the structured diff) and <code>tool_summary.md</code> (a short summary). Then, in Claude
+(the structured diff) and <code>tool_summary.md</code> (a short summary of the counts). Then, in Claude
 Code, write the readable summary with the skill:</p>
 <pre><code>/mixs-diff-summary assets/diff_results/v5_to_v6.0.0/schema_comparison_results.yaml
 </code></pre>
@@ -1159,8 +1243,8 @@ use a different mapping set (see
 </code></pre>
 <p><strong>Two tagged releases:</strong></p>
 <pre><code class="language-bash">poetry run diff-releases \
-  --old &quot;GenomicsStandardsConsortium/mixs@v6.2.0:src/mixs/schema/mixs.yaml&quot; \
-  --new &quot;GenomicsStandardsConsortium/mixs@v6.3.1:src/mixs/schema/mixs.yaml&quot;
+  --old &quot;GenomicsStandardsConsortium/mixs@v6.3.1:src/mixs/schema/mixs.yaml&quot; \
+  --new &quot;GenomicsStandardsConsortium/mixs@v7.0.0:src/mixs/schema/mixs.yaml&quot;
 </code></pre>
 <p><strong>A release from before v6.2.0.</strong> The path differs on the old side, because the
 single-file schema only exists from v6.2.0 onward. Earlier releases keep the
@@ -1177,7 +1261,10 @@ be compared with this tool at all; the v5 to v6.0.0 comparison was produced by a
 separate one-time script with an Excel reader.</p>
 <p>The <strong>release workflow</strong> is more limited still: it hardcodes
 <code>src/mixs/schema/mixs.yaml</code> for both sides, so its oldest usable base is
-v6.2.0.</p>
+v6.2.0. Leaving its <code>diff_old</code> input empty compares against the most recent
+full release, skipping pre-releases and anything before v6.2.0. Fill it in only
+to compare against something else, and set <code>diff_old_path</code> as well if that is a
+release older than v6.2.0.</p>
 <table>
 <thead>
 <tr>
@@ -1242,6 +1329,12 @@ v6.2.0.</p>
 <td>present</td>
 <td>yes</td>
 </tr>
+<tr>
+<td><code>v7.0.0</code></td>
+<td>2026-07-29</td>
+<td>present</td>
+<td>yes</td>
+</tr>
 </tbody>
 </table>
 <p>Note the tag naming changes at v6.2.0: earlier releases are <code>mixs6.x</code> and <code>MIxS5</code>,
@@ -1260,6 +1353,8 @@ per-release folder; pass <code>--output-dir</code> to override):</p>
   classes, enums, prefixes, settings) splits into <code>key_comparison</code> (added or
   removed names) and <code>definition_changes</code> (same name, changed body, field by
   field).</li>
+<li><code>tool_summary.md</code>: a short summary of the counts, how many elements were added,
+  removed and changed in each collection, derived from the structured diff.</li>
 </ul>
 <p>The structured output reports every change equally, including cosmetic ones. For
 example, a one-line edit to a templated description can show as a change on every
@@ -1277,8 +1372,7 @@ The summary is only produced by invoking the skill, not by editing that file by
 hand.</p>
 <p>At release time, the release workflow generates the structured diff on the
 release branch, and a maintainer runs this skill on that branch to add the
-summary before review. See <a href="../edit_workflow/">edit_workflow.md</a>, section
-"Releases". The summary step is deliberately not run in CI, so it needs no API keys.</p>
+summary before review. See <a href="../releasing/">Releasing MIxS</a>. The summary step is deliberately not run in CI, so it needs no API keys.</p>
 <h3 id="which-comparisons-are-published">Which comparisons are published</h3>
 <p>The <code>Version changes</code> section of the site nav in <code>mkdocs.yml</code> lists one pair of
 pages per generated comparison, and it currently holds only <code>v5 to v6.0.0</code>,
